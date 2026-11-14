@@ -1,0 +1,23 @@
+{
+	"monsterList": [],
+	"height": 2304,
+	"hasTransparent": false,
+	"preLoad": [],
+	"alphaData": [],
+	"numCol": 11,
+	"widthInGrid": 64,
+	"name": "3001",
+	"heightInGrid": 64,
+	"numRow": 9,
+	"gridWidth": 256,
+	"gridHeight": 256,
+	"pngData": [[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0]],
+	"blockData": [],
+	"tileWidth": 256,
+	"tileHeight": 256,
+	"effectList": {
+		"effects": [],
+		"effDefine": {}
+	},
+	"width": 2816
+}

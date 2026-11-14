@@ -1,0 +1,23 @@
+{
+	"pngData": [[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0]],
+	"height": 0,
+	"hasTransparent": false,
+	"monsterList": [],
+	"tileWidth": 256,
+	"preLoad": [],
+	"name": "2001",
+	"heightInGrid": 0,
+	"gridWidth": 0,
+	"numRow": 0,
+	"widthInGrid": 0,
+	"gridHeight": 0,
+	"alphaData": [],
+	"blockData": [],
+	"numCol": 0,
+	"tileHeight": 256,
+	"effectList": {
+		"effects": [],
+		"effDefine": {}
+	},
+	"width": 0
+}
