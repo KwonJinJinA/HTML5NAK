@@ -1,0 +1,1 @@
+{"animations":{"00":{"frames":[0,1,2,3]}},"rHeight":179,"scale":1.25,"images":["cy1_skill02RightDown_0.png"],"memCost":921040,"isYaSuo":true,"sequence":{"00":{"frames":[0,1,2,3,0]}},"actionMarks":{"00":{"frames":[0,0,0,0]}},"frames":[[0,0,1,1,0,0,0,100],[1,0,216,129,58,91,0,100],[0,129,398,244,121,143,0,100],[0,374,319,207,53,111,0,100]]}

@@ -1,0 +1,1 @@
+{"animations":{"233":{"frames":[0]},"231":{"frames":[1]}},"rHeight":256,"scale":2,"images":["AttackSkill4_0.png"],"memCost":4,"isYaSuo":true,"sequence":{"233":{"frames":[0,0]},"231":{"frames":[1,1]}},"actionMarks":{"233":{"frames":[0]},"231":{"frames":[0]}},"frames":[[0,0,1,1,128,128,0,80],[0,0,1,1,128,128,0,80]]}

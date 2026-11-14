@@ -1,0 +1,1 @@
+{"animations":{"00":{"frames":[0,1,2,3]}},"rHeight":512,"scale":2,"images":["gg_skill01RightDown_0.png"],"memCost":272048,"isYaSuo":true,"sequence":{"00":{"frames":[0,1,2,3,0]}},"actionMarks":{"00":{"frames":[0,0,0,0]}},"frames":[[0,0,1,1,256,256,0,125],[1,0,118,89,32,61,0,125],[0,89,196,130,44,61,0,125],[0,219,186,128,36,63,0,125]]}
