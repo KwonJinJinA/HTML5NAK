@@ -1,0 +1,23 @@
+{
+	"frames":[
+		[0,0,145,70,27,48,0,150],
+		[0,70,164,87,37,19,0,150]
+	],
+	"animations":{
+		"21":{"frames":[1]},
+		"23":{"frames":[0]}
+	},
+	"sequence":{
+		"21":{"frames":[1,1]},
+		"23":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"21":{"frames":[0]},
+		"23":{"frames":[0]}
+	},
+	"images":[
+		"Die_0.png"
+	],
+	"memCost":100440,
+	"rHeight":48
+}

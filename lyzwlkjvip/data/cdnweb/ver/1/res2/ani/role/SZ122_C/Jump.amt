@@ -1,0 +1,23 @@
+{
+	"frames":[
+		[0,0,80,145,46,132,0,150],
+		[0,145,64,106,41,132,0,150]
+	],
+	"animations":{
+		"61":{"frames":[1]},
+		"63":{"frames":[0]}
+	},
+	"sequence":{
+		"61":{"frames":[1,1]},
+		"63":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"61":{"frames":[0]},
+		"63":{"frames":[0]}
+	},
+	"images":[
+		"Jump_0.png"
+	],
+	"memCost":79000,
+	"rHeight":132
+}
