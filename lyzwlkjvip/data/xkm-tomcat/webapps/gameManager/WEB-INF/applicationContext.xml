@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd"
+        >
+
+    <description>Spring MVC Configuration</description>
+    <context:component-scan base-package="com.xuanqing.*" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <bean id="propertyConfigurer"  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:config/app.properties</value>
+            </list>
+        </property>
+    </bean>
+
+
+
+
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/plain;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!--Spring Security-->
+    <bean id="springSecurityFilterChain" class="com.xuanqing.filters.auth.SpringAuthFilter"/>
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${info.JDBC.driver}" />
+        <property name="url" value="${info.JDBC.url}" />
+        <property name="username" value="${info.JDBC.user}" />
+        <property name="password" value="${info.JDBC.password}" />
+    </bean>
+
+    <!--配置数据源，Connection Pool  -->
+    <bean id="dataCacheManager" class="com.kernel.data.jdbc.cache.DataCacheManager">
+        <constructor-arg index="0" ref="dataSource"/>
+    </bean>
+
+    <bean id="redisMgr" class="com.common.redis.RedisMgr">
+    </bean>
+
+    <bean id="logDBMgr" class="com.common.database.LogDBManager">
+    </bean>
+    <bean id="dataContainer" class="com.xuanqing.DataContainer"/>
+</beans>
