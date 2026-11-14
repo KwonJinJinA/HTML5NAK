@@ -1,0 +1,215 @@
+{
+	"isLayerUp": true,
+	"actorList": [
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 800
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": 192,
+				"rotation": 0,
+				"y": -10,
+				"delay": 1000,
+				"scaleX": 0.5,
+				"layer": 0,
+				"scaleY": 0.5
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 800
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": -219,
+				"rotation": 0,
+				"y": -12,
+				"delay": 1000,
+				"scaleX": 0.5,
+				"layer": 0,
+				"scaleY": 0.5
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 800
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": -11,
+				"rotation": 0,
+				"y": -78,
+				"delay": 1000,
+				"scaleX": 0.5,
+				"layer": 0,
+				"scaleY": 0.5
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 800
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": -119,
+				"rotation": 0,
+				"y": 113,
+				"delay": 1000,
+				"scaleX": 0.5,
+				"layer": 0,
+				"scaleY": 0.5
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 800
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": 104,
+				"rotation": 0,
+				"y": 104,
+				"delay": 1000,
+				"scaleX": 0.5,
+				"layer": 0,
+				"scaleY": 0.5
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 800
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": -8,
+				"rotation": 0,
+				"y": 215,
+				"delay": 1000,
+				"scaleX": 0.5,
+				"layer": 0,
+				"scaleY": 0.5
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 600
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": 190,
+				"rotation": 0,
+				"y": -148,
+				"delay": 600,
+				"scaleX": 0.8,
+				"layer": 0,
+				"scaleY": 0.8
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 1100
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": -231,
+				"rotation": 0,
+				"y": -145,
+				"delay": 0,
+				"scaleX": 0.8,
+				"layer": 0,
+				"scaleY": 0.8
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 600
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": 189,
+				"rotation": 0,
+				"y": 254,
+				"delay": 600,
+				"scaleX": 0.8,
+				"layer": 0,
+				"scaleY": 0.8
+			}
+		},
+		{
+			"actionList": [
+				{
+					"action": "visible",
+					"visible": true,
+					"id": 1,
+					"after": -1,
+					"delay": 1100
+				}
+			],
+			"res": "ani/effect/skill_L/hj01/hj01.amt",
+			"base": {
+				"x": -230,
+				"rotation": 0,
+				"y": 261,
+				"delay": null,
+				"scaleX": 0.8,
+				"layer": 0,
+				"scaleY": 0.8
+			}
+		}
+	]
+}

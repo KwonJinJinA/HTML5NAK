@@ -1,0 +1,8 @@
+{
+"SkillOP0":[["delayTime","延迟时间",2,0,2000],["isFirstHurt","立刻受到伤害",1,true],["hurtTime","伤害间隔",2,0,500],["hurtTimes","伤害次数",0,0,8]],
+"SkillOP1":[["delayTime","延迟时间",2,0,2000],["isFirstHurt","立刻受到伤害",1,true],["distance","距离",2,0,500]],
+"SkillOP2":[["delayTime","延迟时间",2,0,2000],["isFirstHurt","立刻受到伤害",1,true],["distance","距离",2,0,500],["time","波数",0,1,8],["spaceTime","技能时间间隔",2,0,500]],
+"SkillOP3":[["delayTime","延迟时间",2,0,2000],["isFirstHurt","立刻受到伤害",1,true],["hurtTime","伤害间隔",2,0,500],["moveDis","移动距离",0,0,500],["speed","速度",2,0,2],["spaceRot","角度间隔",0,0,180],["effectCount","特效数量",0,0,10],["stopTime","静止时间",2,0,400],["startRot","起始角度偏移",0,-180,180]],
+"SkillOP4":[["delayTime","延迟时间",2,0,2000],["isFirstHurt","立刻受到伤害",1,true],["hurtTime","伤害间隔",2,0,500],["hurtTimes","伤害次数",0,0,8],["times","波数",0,1,10],["spaceTime","时间间隔",2,0,500],["distance","距离",0,0,500],["isClockwise","是否顺时针",1,true]],
+"SkillOP5":[["delayTime","延迟时间",2,0,2000],["isFirstHurt","立刻受到伤害",1,true],["hurtTime","伤害间隔",2,0,500],["hurtTimes","伤害次数",0,0,8],["times","波数",0,1,10],["effectCount","特效数量",0,1,10],["spaceTime","时间间隔",2,0,500],["distance","距离",2,0,500],["spaceRot","同圈角度间隔",0,0,180],["spaceDis","不同圈距离间隔",0,0,500],["startRot","起始角度偏移",0,-180,180]]
+}
