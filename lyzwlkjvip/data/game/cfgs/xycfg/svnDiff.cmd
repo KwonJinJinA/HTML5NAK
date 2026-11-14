@@ -1,0 +1,1 @@
+svn diff E:\_WORK\game-XK\svn2\config --summarize -r 18:146   > E:\_WORK\game-XK\svn2\config\diff.log

@@ -1,0 +1,13 @@
+
+Cflex.messaging.io.ArrayCollection			name装备评分	iconm5indexiddescribeW提升装备强化等级,进阶高阶装备showlvpro	zbqhopenui+HeroMediator:qianghua	宝石镶嵌m12
+C激活宝石、提升宝石等级7	bsxq'HeroMediator:baoshi	技能评分m16
+C学习技能、提升技能等级
+	jnpf%SkillPanelMediator	法宝评分m6
+]合成更多法宝,祭炼、激活天人合一	fbpf%TrumpPanelMediator	坐骑进阶m15
+C进阶坐骑、提升坐骑技能	zqjj%HeroMediator:zuoqi	天元心法m2
+%激活天元心法
+	tyxf%HeroMediator:xinfa	修仙境界m3
+%提升修仙境界#	xxjj'HeroMediator:xianfa	灵气评分m9
+K装备更多灵气,提升灵气等级2	lqpfV	VIP属性	mvip
+
+	C开通VIP获得更多属性加成vipVIPMediator

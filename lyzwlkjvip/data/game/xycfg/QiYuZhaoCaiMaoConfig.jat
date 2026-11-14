@@ -1,0 +1,16 @@
+
+Cflex.messaging.io.ArrayCollection			help�1、每充值100元，可以获得5次抽奖机会。<br/>
+2、抽奖100%可以获得翻倍效果，最低1.3倍，最高5倍。<br/>
+3、每抽奖1次底数都会增加，最低1000元宝，抽奖所得的元宝数为底数x翻倍的倍数。<br/>
+4、抽奖达到100次后，基数达到上限。<br/>
+5、活动结束后，元宝底数将会重置。<br/>
+概率公示：<br/>
+1.3倍 20%<br/>
+1.5倍 20%<br/>
+1.8倍 10%<br/>
+2倍   10%<br/>
+2.5倍 10%<br/>
+3倍 10%<br/>
+4倍 10%<br/>
+5倍 10%
+	flagrecordText�-恭喜<font color="#60cbff">【{0}】</font>人品爆发，元宝翻<font color="#ff3c3c">{1}倍</font>，获得<font color="#60cbff">{2}</font>元宝broadCastId�.	rate/1.3|5|1.5|4|1.8|3|2|2.5soundalertInfo�+每充值<font color="#60cbff">100元</font>，可获得<font color="#60cbff">5</font>次抽奖机会。元宝白送，免费翻倍，稳赚不赔！rechargeNumdrollCount

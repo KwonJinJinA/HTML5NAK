@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- status=debug 可以查看log4j的装配过程 -->
+<configuration status="debug" monitorInterval="30" shutdownHook="disable">
+	<properties>
+		<property name="LOG_HOME">log</property>
+		<property name="REDO_HOME">data/redo</property>
+		<property name="RESULT_HOME">data/sql</property>
+		<property name="SQLEXC_HOME">data/sqlexception</property>
+	</properties>
+	
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+      		<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    	</Console>
+    	<!-- 错误日志 -->
+    	<RollingFile name="error_appender" fileName="${LOG_HOME}/error.log" filePattern="${LOG_HOME}/error-%d{yyyy-MM-dd}-%i.log.gz">
+    		<PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+    		<SizeBasedTriggeringPolicy size="100 MB" />
+    	</RollingFile>
+    	<RollingFile name="report_appender" fileName="${LOG_HOME}/report.log" filePattern="${LOG_HOME}/report-%d{yyyy-MM-dd}-%i.log.gz">
+    		<PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+    		<SizeBasedTriggeringPolicy size="100 MB" />
+    	</RollingFile>
+    	<RollingRandomAccessFile name="redo_appender" fileName="${REDO_HOME}/redo/redo" filePattern="${REDO_HOME}/redo/redo-%d{yyyy-MM-dd-HH-mm}.log">
+    		<PatternLayout pattern="%m%n"/>
+    		<Policies>
+				<TimeBasedTriggeringPolicy interval="10" modulate="true" />
+			</Policies>
+    	</RollingRandomAccessFile>
+
+    	<RollingRandomAccessFile name="redo_appender" fileName="${REDO_HOME}/redo/redo" filePattern="${REDO_HOME}/redo/redo-%d{yyyy-MM-dd-HH-mm}.log">
+    		<PatternLayout pattern="%m%n"/>
+    		<Policies>
+				<TimeBasedTriggeringPolicy interval="10" modulate="true" />
+			</Policies>
+    	</RollingRandomAccessFile>
+    	
+    	<RollingFile name="sql_appender" fileName="${RESULT_HOME}/sql" filePattern="${RESULT_HOME}/sql-%d{yyyy-MM-dd}-%i.log">
+    		<PatternLayout pattern="%m%n"/>
+    		<SizeBasedTriggeringPolicy size="50 MB" />
+    	</RollingFile>
+    	<RollingFile name="sqlexc_appender" fileName="${SQLEXC_HOME}/sqlexc" filePattern="${RESULT_HOME}/sqlexc-%d{yyyy-MM-dd}-%i.log">
+    		<PatternLayout pattern="%m%n"/>
+    		<SizeBasedTriggeringPolicy size="50 MB" />
+    	</RollingFile>
+    	<RollingFile name="sqlexc_source_appender" fileName="${SQLEXC_HOME}/sql" filePattern="${RESULT_HOME}/sqlexc-source-%d{yyyy-MM-dd}-%i.log">
+    		<PatternLayout pattern="%m%n"/>
+    		<SizeBasedTriggeringPolicy size="50 MB" />
+    	</RollingFile>
+
+	</appenders>
+	
+	<loggers>
+	 	<logger name="org.springframework" level="warn"/>
+		<logger name="org.apache.mina" level="warn"/>
+		<logger name="org.apache.http" level="warn"/>
+		<logger name="org.apache.commons" level="warn"/>
+		<logger name="com.mchange.v2" level="error"/>
+		<logger name="com.ibatis" level="warn"/>
+		<logger name="java.sql" level="info"/>
+		<logger name="org.quartz" level="debug"/>
+		<logger name="com.opensymphony" level="warn"/>
+		<logger name="com.sun.xml.internal.ws" level="warn"/>
+
+		<logger name="error_logger" level="DEBUG" additivity="true">
+			<AppenderRef ref="error_appender" />
+		</logger>
+		<logger name="report_logger"  level="info" additivity="false">
+			<AppenderRef ref="report_appender" />
+		</logger>
+		<logger name="redo_logger" additivity="true">
+			<AppenderRef ref="redo_appender" />
+		</logger>
+		<logger name="sql_logger" level="info" additivity="true">
+			<AppenderRef ref="sql_appender" />
+		</logger>
+		<logger name="sqlexc_logger" level="info" additivity="true">
+			<AppenderRef ref="sqlexc_appender" />
+		</logger>
+		<logger name="sqlexc_source_logger" level="info" additivity="true">
+			<AppenderRef ref="sqlexc_source_appender" />
+		</logger>
+		<root level="debug">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="error_appender" />
+		</root>
+	</loggers>
+
+</configuration>

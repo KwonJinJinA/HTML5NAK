@@ -1,0 +1,13 @@
+
+Cflex.messaging.io.ArrayCollection		skills-cw01,cw001,cw002,cw003	zbId0locks1,2,3,4superSkill	cw01	-cw02,cw001,cw002,cw003
+	cw02	-cw03,cw001,cw002,cw003
+	cw03	-cw04,cw001,cw002,cw003
+	cw04	-cw05,cw001,cw002,cw003
+	cw05	-cw06,cw001,cw002,cw003
+	cw06	-cw07,cw001,cw002,cw003
+	cw07	-cw08,cw001,cw002,cw003
+	cw08	-cw09,cw001,cw002,cw003
+	cw09	-cw10,cw001,cw002,cw003	
+	cw10	-cw11,cw001,cw002,cw003
+
+	cw11

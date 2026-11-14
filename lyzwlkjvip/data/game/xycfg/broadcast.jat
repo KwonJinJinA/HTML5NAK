@@ -1,0 +1,98 @@
+
+Cflex.messaging.io.ArrayCollection	�A	modulemeirishouchongtargetType%rmb_recharge_firstid	typevalue&	whengetUiControl��content�恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">38元</font>每日首充，战力更上一层！<font color ="#20932b"><a href ="70287">【我也要领】</a></font>	killbossBossTypeJinDi
+0�?恭喜玩家<font color="#60cbff">【{0}】</font>击杀<font color="#ffc905">秘境boss</font>	!BossTypeJingYing
+�?恭喜玩家<font color="#60cbff">【{0}】</font>击杀<font color="#ffc905">精英boss</font>	BossTypeWorld
+�?恭喜玩家<font color="#60cbff">【{0}】</font>击杀<font color="#ffc905">世界boss</font>	BossTypeYuanGu
+�?恭喜玩家<font color="#60cbff">【{0}】</font>击杀<font color="#ffc905">远古boss</font>	#changeguildmaster
+�u恭喜<font color="#60cbff">【{0}】</font>成为新的帮主，相信在大神的领导下帮派一定会蒸蒸日上！	!quanminchongbang2
+#�m恭喜玩家<font color="#60cbff">【{0}】</font>在全民冲榜中获得第<font color="#ffc905">【{1}】</font>名	paylinepaylineUplevel
+$�'恭喜玩家<font color="#60cbff">【{0}】</font>成功将<font color="#ffc905">【{1}】</font>升级到<font color="#ffc905">【{2}】</font>级	wendingtianxia<
+%	open�<font color='#FFC905'>王都争霸</font>活动将于<font color='#FFC905'>10分钟</font>后开启，<font color='#FFC905'>100级</font>以上帮派玩家可参加，请大家做好战斗准备！	<<
+&>�	<font color='#FFC905'>王都争霸</font>活动将于<font color='#FFC905'>5分钟</font>后开启，<font color='#FFC905'>100级</font>以上帮派玩家可参加，请大家做好战斗准备！	<<
+'>�	<font color='#FFC905'>王都争霸</font>活动将于<font color='#FFC905'>1分钟</font>后开启，<font color='#FFC905'>100级</font>以上帮派玩家可参加，请大家做好战斗准备！	<<
+(>�A<font color='#FFC905'>王都争霸</font>活动，已经开启，<font color='#FFC905'>100级</font>以上帮派玩家可参加，请大家做好战斗准备！	<<
+)close�恭喜玩家<font color='#FFFF07'>{0}</font>成为{1}九五至尊！请大家一起为<font color='#FFFF07'>{2}</font>欢呼吧！	<<
+*H�恭喜{1}帮派成功占领<font color='#FFFF07'>{0}</font>西岐城！	shuaituzhibinN
++>�}<font color='#FFC905'>率土之滨</font>活动将于<font color='#FFC905'>10分钟</font>后开启，<font color='#FFC905'>60级</font>以上玩家可参加，请大家做好战斗准备！	NN
+,>�{<font color='#FFC905'>率土之滨</font>活动将于<font color='#FFC905'>5分钟</font>后开启，<font color='#FFC905'>60级</font>以上玩家可参加，请大家做好战斗准备！	NN
+->�{<font color='#FFC905'>率土之滨</font>活动将于<font color='#FFC905'>1分钟</font>后开启，<font color='#FFC905'>60级</font>以上玩家可参加，请大家做好战斗准备！	NN
+.>�3<font color='#FFC905'>率土之滨</font>活动将于已开启，<font color='#FFC905'>60级</font>以上玩家可参加，请大家做好战斗准备！	NN
+/H�	恭喜{1}帮派成功占领<font color='#FFFF07'>{0}</font>城池！	NN
+0H�恭喜玩家<font color='#FFC905'>{0}</font>成为{1}的城主！请大家一起为<font color='#FFC905'>{2}</font>欢呼吧！	22
+1�]恭喜玩家<font color="#60cbff">【{0}】</font>在全民冲榜中获得第<font color="#ffc905">2</font>名	22
+2�]恭喜玩家<font color="#60cbff">【{0}】</font>在全民冲榜中获得第<font color="#ffc905">3</font>名	dengjilibao%role_level_upgrade
+e2�恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">30级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19001">【我也要领】</a></font>	`b
+fP�恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">50级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19002">【我也要领】</a></font>	`b
+gd�恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">80级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19003">【我也要领】</a></font>	`b
+hx�	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">100级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19004">【我也要领】</a></font>	`b
+i��	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">120级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19005">【我也要领】</a></font>	`b
+j� �	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">150级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19006">【我也要领】</a></font>	`b
+k�4�	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">200级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19007">【我也要领】</a></font>	`b
+l�H�	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">250级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19008">【我也要领】</a></font>	`b
+m�\�	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">300级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19009">【我也要领】</a></font>	`b
+n�p�	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">350级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19010">【我也要领】</a></font>	`b
+o��	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">400级</font>豪华大礼，战力更上一层！<font color ="#20932b"><a href ="19011">【我也要领】</a></font>	`b
+p�x	`b
+q�,x	`b
+r�@x	`b
+s�Jx	`b
+t�Tx	`b
+u�^x	`b
+v�hx	`b
+w�rx	`b
+x�|x	shouchong
+y��X�{恭喜玩家<font color="#60cbff">【{0}】</font>完成10倍首充，获得极品红颜，并额外获得10000元宝！<font color ="#20932b"><a href ="64600">【前往首充】</a></font>		svip
+z��u�+恭喜玩家<font color="#60cbff">【{0}】</font>激活SVP<font color="#60cbff">【{1}】</font>，获得珍惜道具以及各种特权！成为SVIP	yuanbaoyueka
+{�� �e恭喜玩家<font color="#60cbff">【{0}】</font>激活元宝月卡<a href ="64800">【前往激活】</a></font>	zhizunyueka
+|��!�U恭喜玩家<font color="#60cbff">【{0}】</font>激活至尊特权，获得大量元宝和特权！<font color ="#20932b"><a href ="64801">【前往激活】</a></font>	baiyinjijin
+}�a恭喜玩家<font color="#60cbff">【{0}】</font>激活白银基金，获得大量元宝和珍惜法宝！<font color ="#20932b"><a href ="19011">【前往激活】</a></font>	huangjinjijin
+~�a恭喜玩家<font color="#60cbff">【{0}】</font>激活黄金基金，获得大量元宝和珍惜法宝！<font color ="#20932b"><a href ="19011">【前往激活】</a></font>	zuanshijijin
+�a恭喜玩家<font color="#60cbff">【{0}】</font>激活钻石基金，获得大量元宝和珍惜法宝！<font color ="#20932b"><a href ="19011">【前往激活】</a></font>	fenghou
+� ��H�}恭喜玩家<font color="#60cbff">【{0}】</font>晋升为<font color="#60cbff">【{1}】</font>，获得丰厚大奖！<font color ="#20932b"><a href ="64200">【前往晋升】</a></font>	baijiang
+���I�K恭喜玩家<font color="#60cbff">【{0}】</font>转生为<font color="#60cbff">【{1}】</font>，获得丰厚大奖以及特权并可穿戴更高阶装备！<font color ="#20932b"><a href ="64201">【前往转生】</a></font>	mijingrank
+��b�c恭喜玩家<font color="#60cbff">【{0}】</font>在秘境BOSS中力压群雄，夺得大奖奖励归属！<font color ="#20932b"><a href ="12002">【前往挑战】</a></font>	
+��z�u恭喜玩家<font color="#60cbff">【{0}】</font>击杀特权BOSS，获得稀有宠物，侠客，护法，红颜！<font color ="#20932b"><a href ="11002">【前往挑战】</a></font>	finishchallenge
+��|�u恭喜玩家<font color="#60cbff">【{0}】</font>在恶人谷活动中击杀强力BOSS，获得海量道具奖励！<font color ="#20932b"><a href ="11004">【前往挑战】</a></font>	�$
+��<�c恭喜玩家<font color="#60cbff">【{0}】</font>挑战成功妖怪大道第<font color="#60cbff">【{1}】</font>层，获得海量侠客激活碎片以及培养材料！<font color ="#20932b"><a href ="14012">【前往挑战】</a></font>	�$
+��3�3恭喜玩家<font color="#60cbff">【{0}】</font>挑战成功符文塔第<font color="#60cbff">【{1}】</font>层，解锁金色，红色符文！<font color ="#20932b"><a href ="14003">【前往挑战】</a></font>	�$
+��2�9恭喜玩家<font color="#60cbff">【{0}】</font>挑战成功神兽岛第<font color="#60cbff">【{1}】</font>层，获得超稀有的侠客宝箱！<font color ="#20932b"><a href ="14002">【前往挑战】</a></font>	�$
+��;�9恭喜玩家<font color="#60cbff">【{0}】</font>挑战成功法宝阁第<font color="#60cbff">【{1}】</font>层，获得海量法宝升级材料！<font color ="#20932b"><a href ="14011">【前往挑战】</a></font>	�$
+�	�恭喜玩家<font color="#60cbff">【{0}】</font>挑战关卡第<font color="#60cbff">【{1}】</font>关成功，获得海量元宝奖励！	zhuluzhongyuan
+�
+���!恭喜玩家<font color="#60cbff">【{0}】</font>在仙尊排位中晋升为<font color="#60cbff">【{1}】</font>，获得丰富奖励！<font color ="#20932b"><a href ="64002">【前往挑战】</a></font>	pvprank
+��恭喜<font color="#60cbff">【{0}】</font>获得<font color="#60cbff">【{1}】</font>城池，每天都可以获得丰厚奖励！<font color ="#20932b"><a href ="19011">【前往挑战】</a></font>	�6
+��?恭喜玩家<font color="#60cbff">【{0}】</font>成为国王，成为无与伦比的王者！	hechengbaoshi
+��l�o恭喜玩家<font color="#60cbff">【{0}】</font>成功合成稀有宝石<font color="#60cbff">【{1}】</font>！<font color ="#20932b"><a href ="1004">【前往合成】</a></font>	hechengbaoxiang
+��l�g恭喜玩家<font color="#60cbff">【{0}】</font>成功合成稀有宝箱<font color="#60cbff">【{1}】</font>！开启即可获得珍惜角色时装和坐骑幻化造型！<font color ="#20932b"><a href ="1004">【前往合成】</a></font>	!activeshengjiang
+��j�恭喜玩家<font color="#60cbff">【{0}】</font>成功激活传说侠客<font color="#60cbff">【{1}】</font>获得大量属性！<font color ="#20932b"><a href ="1002">【前往激活】</a></font>	�D
+���Q�9恭喜玩家<font color="#60cbff">【{0}】</font>成功激活强力侠客<font color="#60cbff">【{1}】</font>，从此策马江湖，红尘作伴！<font color ="#20932b"><a href ="61009">【前往激活】</a></font>	�D
+���[�E恭喜玩家<font color="#60cbff">【{0}】</font>成功激活强力宠物<font color="#60cbff">【{1}】</font>，宠物陪伴，成长之路不再孤单！<font color ="#20932b"><a href ="61019">【前往激活】</a></font>	�D
+���o�9恭喜玩家<font color="#60cbff">【{0}】</font>成功激活红颜<font color="#60cbff">【{1}】</font>，曾经遥不可及，如今近在咫尺！<font color ="#20932b"><a href ="61039">【前往激活】</a></font>	�D
+���e�!恭喜玩家<font color="#60cbff">【{0}】</font>成功激活护法<font color="#60cbff">【{1}】</font>，护法下凡，一统天下！<font color ="#20932b"><a href ="61029">【前往激活】</a></font>	activepayline
+���V�9恭喜玩家<font color="#60cbff">【{0}】</font>成功激活<font color="#60cbff">【{1}】</font>坐骑，激活炫酷坐骑和强力坐骑大招！<font color ="#20932b"><a href ="63062">【前往激活】</a></font>	�P
+���W�恭喜玩家<font color="#60cbff">【{0}】</font>成功激活<font color="#60cbff">【{1}】</font>翅膀，能飞的感觉真好！<font color ="#20932b"><a href ="63063">【前往激活】</a></font>	�P
+���X�恭喜玩家<font color="#60cbff">【{0}】</font>成功激活<font color="#60cbff">【{1}】</font>神兵，神兵在手天下我有！<font color ="#20932b"><a href ="63064">【前往激活】</a></font>	�P
+���Y�!恭喜玩家<font color="#60cbff">【{0}】</font>成功激活<font color="#60cbff">【{1}】</font>时装，成为这条街最靓的人！<font color ="#20932b"><a href ="63065">【前往激活】</a></font>	�P
+���"�恭喜玩家<font color="#60cbff">【{0}】</font>成功激活法宝<font color="#60cbff">【{1}】</font>，实力越发强劲！<font color ="#20932b"><a href ="63010">【前往激活】</a></font>		roll
+���F�恭喜玩家<font color="#60cbff">【{0}】</font>在<font color="#60cbff">【{1}】</font>中人品爆发获得<font color="#60cbff">【{2}】</font>，真是一个天选之子，人中锦鲤！	nanmanruqin
+� �`�g恭喜玩家<font color="#60cbff">【{0}】</font>击杀<font color="#60cbff">【{1}】</font>获得丰厚奖励！	!guoguanzhanjiang
+�!�`�b	chaojifuli
+�"�7恭喜玩家<font color="#60cbff">【{0}】</font>在<font color="#60cbff">【超级福利】</font>中人品爆发抽中<font color="#60cbff">【{1}】</font>，真是一个天选之子，人中锦鲤！前往抽奖！	marry
+�#�y恭喜玩家<font color="#60cbff">【{0}】</font>和玩家<font color="#60cbff">【{1}】</font>喜结良缘！！！！！	shutdown+服务器即将关闭
+�$�u[{0}] 尊敬的玩家，服务器10秒后重启，系统将保存您的数据并为您自动重连，祝您游戏愉快！	shouchonglibao
+�%�恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">10元</font>首充豪礼，战力更上一层！<font color ="#20932b"><a href ="19001">【我也要领】</a></font>	�t
+�&�	恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">198元</font>首充豪礼，战力更上一层！<font color ="#20932b"><a href ="19001">【我也要领】</a></font>	�t
+�'�'恭喜玩家<font color="#60cbff">【{0}】</font>领取<font color="#ffc905">188元</font>首充豪礼的补充奖励，战力更上一层！<font color ="#20932b"><a href ="19001">【我也要领】</a></font>	qunxiongzhengba
+�(��x�恭喜玩家<font color="#60cbff">【{0}】</font>在<font color="#60cbff">天机转盘</font>中人品爆发获得<font color="#60cbff">【{1}】</font>真是一个天选之子，人中锦鲤！快来<font color="#60cbff">天机转盘</font>抽取大奖吧	sendFlower
+�)�]<font color="#60cbff">【{0}】</font>赠送给<font color="#60cbff">【{1}】</font>价值总计<font color="#60cbff">【{2}】</font>魅力的礼物，我爱慕你已久！	
+�*�I恭喜玩家<font color="#60cbff">【{0}】</font>成功打造<font color="#ff3c3c">【{1}】</font>	
+�+�G恭喜玩家<font color="#60cbff">【{0}】</font>接取了一趟<font color="#ff3c3c">【顶级镖车】</font>，正在护送的途中，请大家多多关照！	
+�,�天将降大任于斯人也，恭喜玩家<font color="#60cbff">【{0}】</font>完成神秘任务，获得神秘人的特别赠礼！	
+�-�%恭喜玩家<font color="#47c9ff">【{0}】</font>成功击败【新服BOSS】第<font color="#47c9ff">【{1}】</font>关，获得丰厚的奖赏	
+�.�o<font color="#60cbff">【{0}】</font>人品爆发，在奇遇招财猫活动中元宝成功翻了<font color="#ff3c3c">{1}倍</font>，获得<font color="#60cbff">{2}</font>元宝。	
+�/�i华山论剑第<font color="#47c9ff">【{0}】</font>轮竞赛已经开启，敬请各位大侠火速前往围观。	
+�0�S恭喜玩家<font color="#47c9ff">【{0}】</font>完成SVIP秒杀，抱着一堆珍稀礼包跑回家！	
+�1�)江湖传闻，一代PK强者<font color="#47c9ff">【{0}】</font>获得一颗<font color="#47c9ff">【{1}】</font>,霹雳手威力疯狂飙升！	
+�2�M一颗苹果砸中了脑袋，duang~的一下，玩家<font color="#47c9ff">【{0}】</font>悟出了一招合击技能，名曰<font color="#47c9ff">【{1}】</font>	
+�3�恭喜帮派【{0}】获得了本次围攻光明顶的最终胜利！！！！	
+�4C国王【{0}】上线了！！！

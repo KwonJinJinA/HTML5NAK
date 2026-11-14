@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- status=debug 可以查看log4j的装配过程 -->
+<configuration status="info" monitorInterval="30"
+               shutdownHook="disable">
+    <properties>
+        <!--错误日志输出目录-->
+        <property name="LOG_HOME">log/error</property>
+        <!--游戏的打点日志目录-->
+        <property name="MINUTE_HOME">log/minute</property>
+        <property name="RESOURCE_HOME">log/resource</property>
+        <property name="chatLog">log/chat</property>
+        <!--yygoplog最后汇总的目录-->
+        <property name="yylog">/data/goplog</property>
+        <!--临时打印的目录-->
+        <property name="yylog2">log/goplog</property>
+        <!--平台名称对应app.propertise 里面的 base.platformId-->
+        <property name="yylog.platformId">yy</property>
+        <!--平台的服务器id 不是全局的serverid 对应app.propertise 里面的 base.name -->
+        <property name="yylog.base.name">s1</property>
+
+        <!--yygop日志 -->
+        <property name="yylog.UserInfo">UserInfo</property>
+        <property name="yylog.payinfo">payinfo</property>
+        <property name="yylog.Task">Task</property>
+        <property name="yylog.Activity">Activity</property>
+        <property name="yylog.Shop">Shop</property>
+        <property name="yylog.Consume">Consume</property>
+        <property name="yylog.Item">Item</property>
+
+    </properties>
+
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+
+        <!-- 错误日志 -->
+        <RollingFile name="error_appender" fileName="${LOG_HOME}/error.log"
+                     filePattern="${LOG_HOME}/error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+            <DefaultRolloverStrategy max="100"/>
+        </RollingFile>
+        <RollingFile name="session_appender" fileName="${LOG_HOME}/session.log"
+                     filePattern="${LOG_HOME}/error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+        </RollingFile>
+
+        <!-- IO的错误日志 -->
+        <RollingFile name="io_error_appender" fileName="${LOG_HOME}/io-error.log"
+                     filePattern="${LOG_HOME}/io-error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+        </RollingFile>
+
+        <!-- 开发人员日志 -->
+        <RollingFile name="dev_appender" fileName="${LOG_HOME}/dev.log"
+                     filePattern="${LOG_HOME}/dev-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+        </RollingFile>
+
+        <!-- 服务器状态日志 -->
+        <RollingFile name="server_status_appender" fileName="${LOG_HOME}/server-status.log"
+                     filePattern="${LOG_HOME}/server-status-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+        </RollingFile>
+
+        <!-- 配置的错误日志 -->
+        <RollingFile name="config_error_appender" fileName="${LOG_HOME}/config-error.log"
+                     filePattern="${LOG_HOME}/config-error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+        </RollingFile>
+
+        <!-- 框架的错误日志主要是场景指令报错 -->
+        <RollingFile name="frame_appender" fileName="${LOG_HOME}/frame_error.log"
+                     filePattern="${LOG_HOME}/frame_error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+        </RollingFile>
+
+        <!-- http端口的日志 -->
+        <RollingFile name="http_appender" fileName="${LOG_HOME}/http_error.log"
+                     filePattern="${LOG_HOME}/http_error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="100 MB"/>
+        </RollingFile>
+
+        <!-- 游戏日志(1分钟) -->
+        <RollingRandomAccessFile name="_1min_appender"
+                                 fileName="${MINUTE_HOME}/minute"
+                                 filePattern="${MINUTE_HOME}/minute-%d{yyyy-MM-dd-HH-mm}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <!-- 资源变动日志 -->
+        <RollingFile name="resource_appender" fileName="${RESOURCE_HOME}/resource"
+                     filePattern="${RESOURCE_HOME}/resource-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%thread] %m%n"/>
+            <SizeBasedTriggeringPolicy size="80 MB"/>
+        </RollingFile>
+
+        <!-- 聊天日志(2分钟) -->
+        <RollingRandomAccessFile name="_charlog_appender"
+                                 fileName="${chatLog}/chat" filePattern="${chatLog}/chat-%d{yyyy-MM-dd-HH-mm}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <!--yygop日志一小时 -->
+        <RollingRandomAccessFile name="_yygop_UserInfo_appender"
+                                 fileName="${yylog2}/${yylog.UserInfo}"
+                                 filePattern="${yylog}/${yylog.platformId}/${yylog.base.name}_%d{yyyy_MM_dd_HH}_${yylog.UserInfo}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="_yygop_payinfo_appender"
+                                 fileName="${yylog2}/${yylog.payinfo}"
+                                 filePattern="${yylog}/${yylog.platformId}/${yylog.base.name}_%d{yyyy_MM_dd_HH}_${yylog.payinfo}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+
+
+        <RollingRandomAccessFile name="_yygop_Task_appender"
+                                 fileName="${yylog2}/${yylog.Task}"
+                                 filePattern="${yylog}/${yylog.platformId}/${yylog.base.name}_%d{yyyy_MM_dd_HH}_${yylog.Task}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+        <RollingRandomAccessFile name="_yygop_Activity_appender"
+                                 fileName="${yylog2}/${yylog.Activity}"
+                                 filePattern="${yylog}/${yylog.platformId}/${yylog.base.name}_%d{yyyy_MM_dd_HH}_${yylog.Activity}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+        <RollingRandomAccessFile name="_yygop_Shop_appender"
+                                 fileName="${yylog2}/${yylog.Shop}"
+                                 filePattern="${yylog}/${yylog.platformId}/${yylog.base.name}_%d{yyyy_MM_dd_HH}_${yylog.Shop}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+
+        <RollingRandomAccessFile name="_yygop_Consume_appender"
+                                 fileName="${yylog2}/${yylog.Consume}"
+                                 filePattern="${yylog}/${yylog.platformId}/${yylog.base.name}_%d{yyyy_MM_dd_HH}_${yylog.Consume}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+        <RollingRandomAccessFile name="_yygop_Item_appender"
+                                 fileName="${yylog2}/${yylog.Item}"
+                                 filePattern="${yylog}/${yylog.platformId}/${yylog.base.name}_%d{yyyy_MM_dd_HH}_${yylog.Item}.log">
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+    </appenders>
+
+    <loggers>
+        <logger name="org.springframework" level="warn"/>
+        <logger name="org.apache.mina" level="warn"/>
+        <logger name="org.apache.http" level="warn"/>
+        <logger name="org.apache.commons" level="warn"/>
+        <logger name="com.mchange.v2" level="error"/>
+        <logger name="com.ibatis" level="warn"/>
+        <logger name="java.sql" level="info"/>
+        <logger name="org.quartz" level="warn"/>
+        <logger name="com.opensymphony" level="warn"/>
+        <logger name="com.sun.xml.internal.ws" level="warn"/>
+
+        <logger name="error_logger" level="DEBUG" additivity="true">
+            <AppenderRef ref="error_appender"/>
+        </logger>
+        <logger name="io_error_logger" additivity="false">
+            <AppenderRef ref="io_error_appender"/>
+        </logger>
+        <logger name="config_error_logger" level="info" additivity="false">
+            <AppenderRef ref="config_error_appender"/>
+        </logger>
+        <logger name="server_status_logger" additivity="true">
+            <AppenderRef ref="server_status_appender"/>
+        </logger>
+        <logger name="frame_logger" additivity="false">
+            <AppenderRef ref="frame_appender"/>
+        </logger>
+        <logger name="http_logger" additivity="false">
+            <AppenderRef ref="http_appender"/>
+        </logger>
+        <logger name="_1min_logger" level="info" additivity="true">
+            <AppenderRef ref="_1min_appender"/>
+        </logger>
+        <logger name="_dev_logger" level="info" additivity="true">
+            <AppenderRef ref="dev_appender"/>
+        </logger>
+        <logger name="_chat_logger" level="info" additivity="true">
+            <AppenderRef ref="_charlog_appender"/>
+        </logger>
+
+
+        <logger name="_resource_logger" level="info" additivity="false">
+            <AppenderRef ref="resource_appender"/>
+        </logger>
+
+
+        <logger name="_gop_UserInfo_logger" level="info" additivity="false">
+            <AppenderRef ref="_yygop_UserInfo_appender"/>
+        </logger>
+
+
+        <logger name="_gop_payinfo_logger" level="info" additivity="false">
+            <AppenderRef ref="_yygop_payinfo_appender"/>
+        </logger>
+
+        <logger name="_gop_Task_logger" level="info" additivity="false">
+            <AppenderRef ref="_yygop_Task_appender"/>
+        </logger>
+
+
+        <logger name="_gop_Activity_logger" level="info" additivity="false">
+            <AppenderRef ref="_yygop_Activity_appender"/>
+        </logger>
+
+
+        <logger name="_gop_Shop_logger" level="info" additivity="false">
+            <AppenderRef ref="_yygop_Shop_appender"/>
+        </logger>
+
+
+        <logger name="_gop_Consume_logger" level="info" additivity="false">
+            <AppenderRef ref="_yygop_Consume_appender"/>
+        </logger>
+
+
+        <logger name="_gop_Item_logger" level="info" additivity="false">
+            <AppenderRef ref="_yygop_Item_appender"/>
+        </logger>
+
+        <root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="error_appender"/>
+        </root>
+    </loggers>
+
+</configuration>

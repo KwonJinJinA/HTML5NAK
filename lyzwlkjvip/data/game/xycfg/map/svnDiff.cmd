@@ -1,0 +1,1 @@
+TortoiseProc.exe /command:commit /path:"%~dp0" /logmsg /closeonend:0
