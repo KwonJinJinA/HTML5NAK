@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>zip加载</title>
+    <meta name='renderer' content='webkit'>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='full-screen' content='true' />
+	<meta name='x5-fullscreen' content='true' />
+	<meta name='360-fullscreen' content='true' />
+	<meta http-equiv='expires' content='0' />
+	<meta name='laya' screenorientation='landscape' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta http-equiv='expires' content='0' />
+	<meta http-equiv='Cache-Control' content='no-siteapp' />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #000;'>
+	<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="libs/jszip.min.js"></script>
+	<script type="text/javascript" src="libs/jszip-utils.js"></script>
+	
+		<script type="text/javascript">
+
+		function errReport(act,info) //主程序函数
+		{
+			errInfo = info.replace(/\n/g , "</br>");
+			var parm = "act=" + act + "&errInfo=" + errInfo +"</br>"+ window.navigator.userAgent;//构造URL参数
+			var url = "http://www.tu86.cn/tu86brophp/index2.php/tensky/sendErrorReport";
+			url = url+"?"+parm;
+			try
+			{
+				var img = document.createElement("img");
+				img.src = url;
+			}
+			catch (e)
+			{
+				return false;
+			}
+			alert(info);	
+		}
+		var myCustomOnError = function (errorMsg , scriptURI, lineNumer , columnNumber,errorObj )
+		{
+			var info = errorMsg + scriptURI + "\n错误行数："+lineNumer ;
+			info += errorObj+errorObj.stack;		
+			errReport("error",info);		
+		}
+		window.onerror = myCustomOnError;
+		function copyClip(str)
+		{
+			try
+			{
+				var div = document.getElementById("divCopy");
+				var copyText = document.createElement("input");
+				copyText.type = "text";
+				div.appendChild(copyText);
+				copyText.value = str;
+				copyText.select();
+				document.execCommand("Copy");
+				div.removeChild(copyText);
+			}
+			catch (e)
+			{
+				return false;
+			}
+			return true;
+		}
+
+		function load()
+		{
+			window.onerror = myCustomOnError;
+		}
+	</script>
+	<!--
+	Mandatory in IE 6, 7, 8 and 9.
+	-->
+	<!--[if IE]>
+	<script type="text/javascript" src="libs/jszip-utils-ie.js"></script>
+	<![endif]-->
+	<script type="text/javascript">	
+		var promise = new JSZip.external.Promise(function (resolve, reject) {
+			JSZipUtils.getBinaryContent('./micro.Virus', function(err, data) {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(data);
+				}
+			});
+		});
+
+		promise.then(JSZip.loadAsync) 
+		.then(function(zip) {
+			return zip.file("virus.vbj").async("string"); 
+		})
+		.then(function success(text) {
+			$("#loading").remove();
+			window.eval(text);
+		}, function error(e) {
+			alert("virus.vbj load failed");
+		});
+	</script>
+	<div id="loading" class='loader-ring'>
+	  <div class='loader-ring-light'></div>
+	  <div class='loader-ring-track'></div>
+	</div>
+	
+	<style> 
+			@font-face
+			{
+				font-family: ZhongYuan;
+				src: url('fonts/test.ttf') format("truetype");
+				 /* IE9+ */
+			}
+			body {
+				background-color: red;
+				font-family: ZhongYuan;
+			}		
+		</style>
+</body>
+</html>
