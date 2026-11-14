@@ -1,0 +1,1 @@
+{"memCost":348840,"isYaSuo":true,"images":["cy1_skill02RightUp_0.png"],"rHeight":304,"sequence":{"00":{"frames":[0,1,2,3,0]}},"frames":[[0,0,1,1,0,0,0,100],[1,0,133,80,29,107,0,100],[0,80,256,144,84,152,0,100],[0,224,236,119,63,150,0,100]],"actionMarks":{"00":{"frames":[0,0,0,0]}},"animations":{"00":{"frames":[0,1,2,3]}},"scale":2}
