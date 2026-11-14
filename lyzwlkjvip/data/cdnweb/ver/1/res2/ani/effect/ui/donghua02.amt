@@ -1,0 +1,20 @@
+{
+	"frames":[
+		[0,0,233,310,116,293,0,400],
+		[0,310,227,301,121,293,0,400]
+	],
+	"animations":{
+		"00":{"frames":[0,1]}
+	},
+	"sequence":{
+		"00":{"frames":[0,1,1]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0,1]}
+	},
+	"images":[
+		"donghua02_0.png"
+	],
+	"memCost":566080,
+	"rHeight":293
+}

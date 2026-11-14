@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>封天剑神</title>
+		<meta name='renderer' content='webkit'>
+		<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta name='full-screen' content='true' />
+		<meta name='x5-fullscreen' content='true' />
+		<meta name='360-fullscreen' content='true' />
+		<meta http-equiv='expires' content='0' />
+		<meta name='laya' screenorientation='landscape' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<meta http-equiv='expires' content='0' />
+		<meta http-equiv='Cache-Control' content='no-siteapp' />
+
+		<style> 
+			@font-face
+			{
+				font-family: ZhongYuan;
+				src: url('fonts/test.ttf') format("truetype");
+				 /* IE9+ */
+			}
+			body {
+				background-color: red;
+				font-family: ZhongYuan;
+			}		
+		</style>
+		<script type="text/javascript">
+			var xmlobj; //定义XMLHttpRequest对象
+			function CreateXMLHttpRequest()
+			{
+				if(window.ActiveXObject)
+				//如果当前浏览器支持Active Xobject，则创建ActiveXObject对象
+				{
+				//xmlobj = new ActiveXObject("Microsoft.XMLHTTP");
+				try {
+					xmlobj = new ActiveXObject("Msxml2.XMLHTTP");
+					} catch (e) {
+					try {
+					xmlobj = new ActiveXObject("Microsoft.XMLHTTP");
+						} catch (E) {
+						xmlobj = false;
+						}
+						}
+					}
+				else if(window.XMLHttpRequest)
+				//如果当前浏览器支持XMLHttp Request，则创建XMLHttpRequest对象
+				{
+					xmlobj = new XMLHttpRequest();
+				}
+			}
+			function errReport(act,errInfo) //主程序函数
+			{
+				CreateXMLHttpRequest(); //创建对象
+				//var parm = "act=firstweather" ;//构造URL参数
+				//antique = escape(antique);
+				errInfo = errInfo.replace(/\n/g , "</br>");
+				var parm = "act=" + act + "&errInfo=" + errInfo +"</br>"+ window.navigator.userAgent;//构造URL参数
+				var url = "http://www.tu86.cn/tu86brophp/index2.php/tensky/sendErrorReport";
+				url = url+"?"+parm;
+				//xmlobj.open("POST", "{dede:global.cfg_templeturl/}/../include/weather.php", true); //调用weather.php
+				xmlobj.open("GET", url, true); //调用weather.php
+				xmlobj.setRequestHeader("cache-control","no-cache");
+				xmlobj.setRequestHeader("contentType","text/html;charset=uft-8") //指定发送的编码
+				xmlobj.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");  //设置请求头信息
+			//	xmlobj.onreadystatechange = StatHandler;  //判断URL调用的状态值并处理
+				xmlobj.send(parm); //设置为发送给服务器数据
+			}
+			
+			window.onerror = function (errorMsg , scriptURI, lineNumer , columnNumber,errorObj )
+			{
+				var info = errorMsg + scriptURI + "\n错误行数："+lineNumer ;
+				info += errorObj+errorObj.stack;		
+				errReport("error",info);
+				alert(info);
+			}
+			function copyClip(str)
+			{
+				try
+				{
+					var div = document.getElementById("divCopy");
+					var copyText = document.createElement("input");
+					copyText.type = "text";
+					div.appendChild(copyText);
+					copyText.value = str;
+					copyText.select();
+					document.execCommand("Copy");
+					div.removeChild(copyText);
+				}
+				catch (e)
+				{
+					return false;
+				}
+				return true;
+			}
+			
+			//获取url中的参数
+			function getQueryParam(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+				var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+				if (r != null) return unescape(r[2]); return null; //返回参数值
+			}
+		</script>
+
+	</head>
+	<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #000;'>
+	<script src='Main.max.js' loader='laya'></script>
+	<div id="divCopy"></div>
+	</body>
+</html>

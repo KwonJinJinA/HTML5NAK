@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,277,284,132,234,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"baoxiang07_0.png"
+	],
+	"memCost":312432,
+	"rHeight":234
+}

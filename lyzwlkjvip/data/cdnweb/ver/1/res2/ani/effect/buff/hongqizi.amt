@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,252,124,125,111,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"hongqizi_0.png"
+	],
+	"memCost":123492,
+	"rHeight":111
+}

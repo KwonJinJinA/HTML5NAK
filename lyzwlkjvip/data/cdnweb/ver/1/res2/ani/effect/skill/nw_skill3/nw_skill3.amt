@@ -1,0 +1,1 @@
+{"rHeight":639,"actionMarks":{"00":{"frames":[0,0,0,0]}},"scale":1,"images":["nw_skill3_0.png","nw_skill3_1.png","nw_skill3_2.png","nw_skill3_3.png"],"animations":{"00":{"frames":[0,1,2,3]}},"memCost":13542356,"sequence":{"00":{"frames":[0,1,2,3,0]}},"frames":[[0,0,962,780,495,532,3,200],[0,0,1002,955,500,639,0,200],[0,0,1002,916,500,612,1,200],[0,0,959,793,469,501,2,200]]}

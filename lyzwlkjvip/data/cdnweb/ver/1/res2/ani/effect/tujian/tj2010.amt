@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,210,279,102,278,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"tj2010_0.png"
+	],
+	"memCost":232408,
+	"rHeight":278
+}

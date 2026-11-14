@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,417,438,188,230,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"Lantern_ef_0.png"
+	],
+	"memCost":1048576,
+	"rHeight":230
+}

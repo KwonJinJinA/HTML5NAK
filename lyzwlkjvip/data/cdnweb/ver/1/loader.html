@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>代号X</title> 
+	<script src="jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		//获取url中的参数
+        function getQueryParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+		var version = 1;
+		 $.getJSON("route.json",function(result){
+			 debugger;
+			var sid = getQueryParam("sid");
+			if(sid == null)
+			{
+				sid = 1;
+			}	
+			version = result.defaultVersion;
+			var rules = result.rules;
+			for(var i=0 ; i< rules.length ; i++)
+			{
+				var rule = rules[i];
+				if(rule[0] <= sid && sid <= rule[1])
+				{
+					version = rule[2];
+					break;
+				}
+			}
+			var urlStr = window.location.search.substr(1);
+			var frameUrl = 'game'+version+'html?'+urlStr;
+			window.location.href = frameUrl;
+			/*var iframe = document.createElement('iframe');
+			iframe.src = frameUrl;
+			iframe.width = "100%";
+			iframe.height = "100%";
+			document.body.append(iframe);*/
+		});
+	</script>
+</head>
+<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #000;'>
+
+
+</body>
+</html>

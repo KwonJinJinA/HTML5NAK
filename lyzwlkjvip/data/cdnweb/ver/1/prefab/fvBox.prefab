@@ -1,0 +1,37 @@
+{
+    "x":0,
+    "type":"Box",
+    "selectedBox":1,
+    "selecteID":4,
+    "props":{"y":0,"x":0,"presetID":1,"preset":"laya/assets/prefab/fvBox.prefab"},
+    "nodeParent":-1,
+    "label":"Box(fvBox)",
+    "isOpen":true,
+    "isDirectory":true,
+    "isAniNode":true,
+    "hasChild":true,
+    "compId":1,
+    "child":[
+        {
+            "x":15,
+            "type":"FontClip",
+            "props":{"y":0,"x":0,"value":"6554","spaceX":-5,"sheet":"0123456789","presetID":4,"preset":"laya/assets/prefab/fvBox.prefab"},
+            "nodeParent":1,
+            "label":"FontClip(fvBox)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":4,
+            "child":[
+                ]
+        }],
+    "animations":[
+        {
+            "nodes":[
+                ],
+            "name":"ani1",
+            "id":1,
+            "frameRate":24,
+            "action":0
+        }]
+}

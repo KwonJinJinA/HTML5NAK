@@ -1,0 +1,27 @@
+{
+	"frames":[
+		[0,0,275,99,173,52,0,200],
+		[0,0,275,99,173,52,0,200]
+	],
+	"animations":{
+                                "00":{"frames":[1]},
+		"03":{"frames":[0]},
+		"01":{"frames":[1]}
+	},
+	"sequence":{
+                                "00":{"frames":[1,1]},
+		"03":{"frames":[0,0]},
+		"01":{"frames":[1,1]}
+	},
+	"actionMarks":{
+                                "00":{"frames":[0]},
+		"03":{"frames":[0]},
+		"01":{"frames":[0]}
+	},
+	"images":[
+		"hx_skill3_0.png"
+	],
+	"memCost":107408,
+	"rHeight":52,
+              "blendMode":"add"
+}

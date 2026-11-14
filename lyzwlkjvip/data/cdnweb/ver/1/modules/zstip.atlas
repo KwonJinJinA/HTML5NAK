@@ -1,0 +1,93 @@
+{
+    "frames": {
+        "bg.png": {
+            "frame": {
+                "h": 355,
+                "idx": 0,
+                "w": 400,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 357,
+                "w": 400
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "c.png": {
+            "frame": {
+                "h": 124,
+                "idx": 0,
+                "w": 100,
+                "x": 0,
+                "y": 356
+            },
+            "sourceSize": {
+                "h": 125,
+                "w": 100
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 1
+            }
+        },
+        "g.png": {
+            "frame": {
+                "h": 125,
+                "idx": 0,
+                "w": 100,
+                "x": 401,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 125,
+                "w": 100
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "s.png": {
+            "frame": {
+                "h": 124,
+                "idx": 0,
+                "w": 87,
+                "x": 101,
+                "y": 356
+            },
+            "sourceSize": {
+                "h": 125,
+                "w": 100
+            },
+            "spriteSourceSize": {
+                "x": 5,
+                "y": 0
+            }
+        },
+        "z.png": {
+            "frame": {
+                "h": 125,
+                "idx": 0,
+                "w": 100,
+                "x": 401,
+                "y": 126
+            },
+            "sourceSize": {
+                "h": 125,
+                "w": 100
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "zstip.png",
+        "prefix": "zstip/"
+    }
+}

@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,98,84,48,47,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"fb101f_0.png"
+	],
+	"memCost":65536,
+	"rHeight":47
+}

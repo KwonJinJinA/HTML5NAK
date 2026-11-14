@@ -1,0 +1,36 @@
+{
+	"frames":[
+		[0,0,466,564,259,403,0,115],
+		[466,0,389,510,213,405,0,115],
+		[0,0,421,594,222,500,1,115],
+		[0,0,614,611,298,450,2,115],
+		[0,0,632,540,285,370,3,115],
+		[0,0,663,561,349,384,4,115],
+		[0,0,734,573,390,417,5,115],
+		[0,0,522,559,254,435,6,115],
+		[0,559,544,459,269,303,6,115],
+		[0,0,659,389,270,258,7,115]
+	],
+	"animations":{
+		"00":{"frames":[0,1,2,3,4,5,6,7,8,9]}
+	},
+	"sequence":{
+		"00":{"frames":[0,1,2,3,4,5,6,7,8,9,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0,0,0,0,0,0,0,0,0,0]}
+	},
+	"images":[
+		"juexue_jiujiuguiyi_scene_up_0.png",
+		"juexue_jiujiuguiyi_scene_up_1.png",
+		"juexue_jiujiuguiyi_scene_up_2.png",
+		"juexue_jiujiuguiyi_scene_up_3.png",
+		"juexue_jiujiuguiyi_scene_up_4.png",
+		"juexue_jiujiuguiyi_scene_up_5.png",
+		"juexue_jiujiuguiyi_scene_up_6.png",
+		"juexue_jiujiuguiyi_scene_up_7.png"
+	],
+	"scale":2,
+	"memCost":12125936,
+	"rHeight":500
+}

@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,152,152,75,75,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"guangdian_0.png"
+	],
+	"memCost":262144,
+	"rHeight":75
+}

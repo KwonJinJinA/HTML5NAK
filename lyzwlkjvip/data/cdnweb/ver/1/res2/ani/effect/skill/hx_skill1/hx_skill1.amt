@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,253,37,26,20,0,80]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"hx_skill1_0.png"
+	],
+	"memCost":36288,
+	"rHeight":20
+}

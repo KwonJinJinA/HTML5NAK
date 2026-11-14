@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,171,276,83,150,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"bingdong_0.png"
+	],
+	"memCost":524288,
+	"rHeight":150
+}

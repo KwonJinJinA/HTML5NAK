@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,112,110,58,49,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"touxiang03_0.png"
+	],
+	"memCost":47520,
+	"rHeight":49
+}

@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,199,84,98,41,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"Stand_0.png"
+	],
+	"memCost":131072,
+	"rHeight":41
+}

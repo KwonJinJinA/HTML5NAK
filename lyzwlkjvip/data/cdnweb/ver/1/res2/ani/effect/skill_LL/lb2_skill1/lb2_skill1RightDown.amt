@@ -1,0 +1,1 @@
+{"scale":2.6,"sequence":{"00":{"frames":[0,1,2,3,4,0]}},"isYaSuo":true,"actionMarks":{"00":{"frames":[0,0,0,0,0]}},"images":["lb2_skill1RightDown_0.png"],"blendMode":"add","animations":{"00":{"frames":[0,1,2,3,4]}},"memCost":149644,"frames":[[0,0,1,1,190,169,0,330],[1,0,67,76,-65,-3,0,110],[68,0,141,99,9,5,0,110],[0,99,125,81,2,-16,0,110],[0,0,1,1,190,169,0,110]],"rHeight":338}

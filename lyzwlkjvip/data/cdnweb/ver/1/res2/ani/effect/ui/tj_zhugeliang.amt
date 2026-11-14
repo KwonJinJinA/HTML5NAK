@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,218,296,106,294,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"tj_zhugeliang_0.png"
+	],
+	"memCost":256060,
+	"rHeight":294
+}

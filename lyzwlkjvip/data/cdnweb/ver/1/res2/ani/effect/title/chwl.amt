@@ -1,0 +1,20 @@
+{
+	"frames":[
+		[0,0,242,87,118,38,0,200],
+		[0,87,241,92,117,41,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0,1]}
+	},
+	"sequence":{
+		"00":{"frames":[0,1,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0,0]}
+	},
+	"images":[
+		"chwl_0.png"
+	],
+	"memCost":169920,
+	"rHeight":41
+}

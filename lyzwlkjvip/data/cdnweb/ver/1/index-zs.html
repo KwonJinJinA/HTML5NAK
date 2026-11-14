@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>无双战神H5</title>
+    <meta name='renderer' content='webkit'>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='full-screen' content='true' />
+	<meta name='x5-fullscreen' content='true' />
+	<meta name='360-fullscreen' content='true' />
+	<meta http-equiv='expires' content='0' />
+	<meta name='laya' screenorientation='landscape' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta http-equiv='expires' content='0' />
+	<meta http-equiv='Cache-Control' content='no-cache' />
+	<!--<script src="https://og6593g2z.qnssl.com/fundebug.0.3.3.min.js" apikey="bb3fc5f1ca33ae893bc51647a09fd3d0ef04166983be4bdfb8abc8c99eeb7b8d"></script>
+	-->
+	<style> 
+		body {
+			background-color: red;
+			font-family: ZhongYuan;
+		}		
+	</style>
+	<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript" src="libs/md5.js"></script>
+	<script type="text/javascript" src="libs/md5.min.js"></script>
+	<script type="text/javascript" src="libs/zlib.min.js"></script>
+	<script type="text/javascript" src="libs/easysax.js"></script>
+	<script type="text/javascript" src="libs/simpleDomParser.js"></script>
+	<script type="text/javascript" src="gameConfig/globalConfig.js"></script>
+	<script type="text/javascript" src="libs/yim.js"></script>
+	<script type="text/javascript" src="libs/vconsole.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		function getQueryValue(queryName) {
+			var query = decodeURI(window.location.search.substring(1));
+			var vars = query.split("&");
+			for (var i = 0; i < vars.length; i++) {
+				var pair = vars[i].split("=");
+				if (pair[0] == queryName) { return pair[1]; }
+			}
+			return null;
+		}
+		if(getQueryValue("vConsole")=="1"){
+			 var vConsole = new VConsole();
+		} 
+       /** var userDataFromPublish ;//= {"user_id":132132,"token":"xxsdfsdafasdf","game_id":"fengtian","channel_id":"yufeng","game_channel_id":"xx","time":1321231231321,"l_h5_sign":"sdfasfxcvcxx233@@@!#xx"};
+		var isStartPublishLogin = false;
+		var logoUrl = "fscs";
+		var publishLogo = "hema";
+		var wxPK = "xjzt666";
+		var majiaID = "";
+		var versionInfo = "文网游备字[2017]M-RPG 0910号  审批文号:新广出审[2017]1757号  出版物号:ISBN 978-7-7979-5248-4";*/
+		function errReport(act,info) //主程序函数
+		{
+			errInfo = info.replace(/\n/g , "</br>");
+			var parm = "act=" + act + "&errInfo=" + errInfo +"</br>"+ window.navigator.userAgent;//构造URL参数
+			var url = "http://www.tu86.cn/tu86brophp/index2.php/tensky/sendErrorReport2";
+			url = url+"?"+parm;
+			try
+			{
+				var img = document.createElement("img");
+				img.src = url;
+			}
+			catch (e)
+			{
+				return false;
+			}
+			alert(info);	
+		}
+		var myCustomOnError = function (errorMsg , scriptURI, lineNumer , columnNumber,errorObj )
+		{
+			debugger
+			if(errorObj)
+			{
+				var info = errorMsg +"</br>"+ scriptURI + "</br>错误行数："+lineNumer+"列数："+columnNumber+"</br>";
+				info += errorObj+errorObj.stack;		
+				errReport("error",info);				
+			}
+		}
+		if(window.location.href.indexOf("http") != -1 && window.location.href.indexOf(".181")!=-1)
+		{
+			window.onerror = myCustomOnError;
+		}
+	
+		function copyClip(str)
+		{
+			var flag = false;
+			try
+			{
+				var div = document.getElementById("divCopy");
+				var copyText = document.createElement("input");
+				copyText.type = "text";
+				div.appendChild(copyText);
+				copyText.value = str;
+				copyText.select();
+				flag = document.execCommand("Copy");
+				div.removeChild(copyText);
+			}
+			catch (e)
+			{
+				return false;
+			}
+			return flag;
+		}
+		
+		
+	</script>
+</head>
+<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #000;'>
+<script src='Main.max.js' loader='laya'></script>
+<div id="divCopy"></div>
+</body>
+</html>

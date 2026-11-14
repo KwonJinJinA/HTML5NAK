@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,210,281,102,280,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"tj3001_0.png"
+	],
+	"memCost":234080,
+	"rHeight":280
+}

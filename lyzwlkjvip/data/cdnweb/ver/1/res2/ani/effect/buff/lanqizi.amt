@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,251,111,125,100,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"lanqizi_0.png"
+	],
+	"memCost":110000,
+	"rHeight":100
+}

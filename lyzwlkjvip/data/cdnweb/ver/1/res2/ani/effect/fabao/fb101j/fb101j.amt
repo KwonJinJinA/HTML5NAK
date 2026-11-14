@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,120,116,58,59,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"fb101j_0.png"
+	],
+	"memCost":54740,
+	"rHeight":59
+}

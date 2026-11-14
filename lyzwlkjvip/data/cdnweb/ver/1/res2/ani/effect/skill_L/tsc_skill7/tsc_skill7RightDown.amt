@@ -1,0 +1,1 @@
+{"actionMarks":{"00":{"frames":[0,0,0,0]}},"animations":{"00":{"frames":[0,1,2,3]}},"isYaSuo":true,"scale":1.8666666666666665,"memCost":621000,"blendMode":"add","rHeight":123,"images":["tsc_skill7RightDown_0.png"],"sequence":{"00":{"frames":[0,1,2,3,0]}},"frames":[[0,0,218,114,17,59,0,120],[0,114,237,138,24,67,0,120],[0,253,252,154,34,78,0,120],[0,408,271,168,47,92,0,120]]}

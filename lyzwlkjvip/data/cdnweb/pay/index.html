@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>荣耀大天使 - 自助后台</title>
+    <link rel="icon" href="http://58yx.top:81/images/favicon.ico" type="image/ico">
+    <meta name="author" content="yinqi">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <!--对话框-->
+    <link rel="stylesheet" href="css/jquery-confirm.min.css">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script type="text/javascript" src="js/jquery.pjax.min.js"></script>
+    <script type="text/javascript" src="js/clwl.js?ver=1.0"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jconfirm/jquery-confirm.min.js"></script>
+    <style>
+        .lyear-wrapper {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lyear-wrapper" id="pjax">
+                <div style="margin: 0 auto;">
+            <div class="col-xs-12 col-sm-10 col-lg-8 center-block" style="float: none;">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <img style="width:50px" src="https://img.gejiba.com/images/e73708947f05dda6015926504846daae.png">
+                            <span style="margin-left: 20px;">自助中心</span>
+                            <div style="float:right;width:50px;line-height: 50px;margin-right: -15px;" onclick="logout()">退出</div>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <span class="input-group-addon">充值区服</span>
+                            <input type="text" name="name" class="form-control" value="<?php echo $_GET['quname'];?>" disabled />
+                        </div><br />
+                        <div class="input-group">
+                            <span class="input-group-addon">游戏账号</span>
+                            <input type="text" name="UserID" class="form-control" value="<?php echo $_GET['user'];?>" disabled />
+							<span class="input-group-addon">角色名称</span>
+                            <input type="text" name="UserI" class="form-control" value="<?php echo $_GET['name'];?>" disabled />
+                        </div><br />
+
+                        <div class="input-group">
+                            <span class="input-group-addon">充值金额</span>
+                            <input type="text" name="UserD" class="form-control" value="<?php echo $_GET['money'];?>" disabled />
+							<span class="input-group-addon">礼包名称</span>
+                            <input type="text" name="UserI" class="form-control" value="<?php echo $_GET['payname'];?>" disabled />
+                        </div><br />
+						
+                        <div class="input-group">
+                            <span class="input-group-addon">赞助币[全站通用]：</span>
+                            <input type="text" name="money" class="form-control" placeholder="" value="0" disabled />
+                        </div><br />
+                        <div class="input-group">
+                            <span class="input-group-addon">兑换币[兑换道具]：</span>
+                            <input type="text" name="money" class="form-control" placeholder="" value="0" disabled />
+                        </div><br />
+						
+						<div>
+                            <button type="button" class="btn btn-primary form-control" onclick="getShop()">确认充值</button>
+                        </div><br />
+                        <!--<div class="input-group">-->
+                        <!--    <span class="input-group-addon">切勿相信折扣拉人,均是骗人,发现一律封号处理</span>-->
+                        <!--</div><br />-->
+                        <!-- <div class="input-group">-->
+                        <!--    <span class="input-group-addon">如发现游戏私聊拉你,让你加Q加V,举报有奖励！</span>-->
+                        <!--</div><br />-->
+                        
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr height="50">
+                                    <td>
+                                        <!--<a href="/user/bind.php" class="btn btn-block btn-danger" pjax="exclude">换绑区服</a>-->
+                                        <a href="/user/weekCard.php" class="btn btn-block btn-danger" >赞助兑换</a>
+                                    </td>
+                                     <td>
+                                        <a href="/user/logs.php" class="btn btn-block btn-danger" >兑换记录</a>
+
+                                    </td>
+                                    
+                                </tr>
+                                
+
+                                <tr height="50">
+                                    
+                                    <td>
+                                        <a href="http://114.116.110.110:88/qiandao/"  pjax="exclude"  class="btn btn-block btn-success" >每日签到</a>
+                                    </td>
+                                    
+                                    <td>
+                                        <a href="#!" class="btn btn-block btn-success" onclick="getUseInfo()">必看说明</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr height="50">
+                                    
+                                    <td>
+                                        <a href="http://xygm.zsyx.top:88/pay/deposit1.html"  pjax="exclude"  class="btn btn-block btn-danger" >兑换赞助币</a>
+                                    </td>
+                                    
+                                    
+                                    <td>
+                                        <a href="/user/bind.php"  pjax="exclude"  class="btn btn-block btn-danger" >区服换绑</a>
+                                    </td>
+                                    
+                                    
+                                </tr>
+                                
+                                
+                              
+                                
+                                
+                                
+                                
+                            </tbody>
+                        </table>
+                        <div class="input-group">
+                            <span class="input-group-addon">福袋奖池</span>
+                            <select name="ServerID" class="form-control">
+                                <option value="0">预览装扮幸运福袋奖池内容</option>
+                                <option value="666298">------顶级官印,最高加成10倍攻速移速-----
+</option><option value="600035">宝马?光速印
+</option><option value="600036">奔驰?光速印
+</option><option value="600037">保时捷?光速印
+</option><option value="600038">法拉利?光速印
+</option><option value="600039">布加迪?光速印
+</option><option value="666298">------装扮时装展示-----
+</option><option value="666310">武神大帝
+</option><option value="260830">武神赵子龙
+</option><option value="900058">未来战士
+</option><option value="666312">九天帝君
+</option><option value="666299">蓝焰机甲
+</option><option value="666300">弑魂使者
+</option><option value="666301">一战成名
+</option><option value="666302">机械战甲
+</option><option value="666306">巴西赤月
+</option><option value="666307">夺命阎王
+</option><option value="666308">绿茵蛊然
+</option><option value="666309">常山赵子龙
+</option><option value="666321">武神血魔
+</option><option value="666322">武夷天下
+</option><option value="666327">万圣节礼服
+</option><option value="900035">红魔影卫
+</option><option value="900034">传奇杀手
+</option><option value="204164">蓝魔影卫
+</option><option value="900042">赤血大帝
+</option><option value="900077">占卜天师
+</option><option value="900056">域外科技
+</option><option value="900043">苗疆青年
+</option><option value="900025">玫瑰恋人
+</option><option value="900030">梦幻沙滩
+</option><option value="900032">樱雪飘舞
+</option><option value="900023">恭贺新禧
+</option><option value="2610129">海王之甲【NB】
+</option><option value="666328">九纹龙【NB】
+</option><option value="666329">天神战衣【NB】
+</option><option value="666330">棋牌大师【NB】
+</option><option value="666331">太阳使者【NB】
+</option><option value="666332">西川侠客【NB】
+</option><option value="666298">------武器时装展示-----
+</option><option value="666298">火焰邪剑
+</option><option value="666303">冰雪神剑
+</option><option value="666305">圣诞佩剑
+</option><option value="666313">紫魔神剑
+</option><option value="666314">紫霄玉龙
+</option><option value="666315">烈焰宝刀
+</option><option value="666323">武神嗜血
+</option><option value="666324">魔舞
+</option><option value="666333">太阳之剑
+</option><option value="666334">初恋之神
+</option><option value="900024">打狗棍
+</option><option value="900037">紫霄
+</option><option value="900038">红龙
+</option><option value="900039">蓝颜
+</option><option value="900026">含光猎影
+</option><option value="900040">地狱火剑
+</option><option value="900041">道家法剑
+</option><option value="900049">嗜血狂刀
+</option><option value="900050">紫电飞剑
+</option><option value="900051">斩龙金刀
+</option><option value="900053">绿毒开天
+</option><option value="900054">金蛇神剑
+</option><option value="900055">烈焰至尊
+</option><option value="900060">圣光领主
+</option><option value="900061">纯洁爱恋
+</option><option value="900062">月光仙子
+</option><option value="900071">紫青盘龙
+</option><option value="2610131">海王之杖【NB】
+</option><option value="900072">魂·含光猎影【NB】
+</option><option value="900059">地狱哀伤【NB】
+</option><option value="666298">------羽翼时装展示-----
+</option><option value="666286">八旗统帅
+</option><option value="666316">九尾妖狐
+</option><option value="666317">红色警戒
+</option><option value="666318">机械战甲
+</option><option value="666319">青龙偃月
+</option><option value="666320">圣诞快乐
+</option><option value="666326">侍女之翼
+</option><option value="900082">蓝星魔翼
+</option><option value="900083">金丝乌羽
+</option><option value="900084">飞鸟神翼
+</option><option value="900085">钢铁烈阳
+</option><option value="900086">赤羽龙凰
+</option><option value="900088">金丝仙王
+</option><option value="900090">地狱使者
+</option><option value="900096">烈阳神羽
+</option><option value="900097">乾坤八卦
+</option><option value="900101">亚特兰蒂斯
+</option><option value="900102">梦幻粉晶
+</option><option value="900103">机械革命
+</option><option value="900104">天王巨星
+</option><option value="666325">江山如画【NB】
+</option><option value="666335">毁灭之光【NB】
+</option><option value="666336">棋牌之翼【NB】
+</option><option value="2610130">海王之翼【NB】</option>                            </select>
+                        </div><br />
+                        <div>
+                            <button type="button" class="btn btn-primary form-control" onclick="getBlessBag()">开启福袋</button>
+                        </div><br />
+                       
+                        <div class="input-group">
+                            <span class="input-group-addon">道具商城</span>
+                            <select name="shopId" class="form-control" onchange="showShopInfo(this.options[this.options.selectedIndex].value)">
+                                <option value="0">请选择要兑换的商品（消耗兑换币）</option>
+                                <option value="1">1币=改名卡</option><option value="2">6币=首充卡</option><option value="3">30币=战力勋章卡</option><option value="4">68币=黄金圣龙卡</option><option value="5">30币=不朽圣杯</option><option value="6">28币=钻石月卡</option><option value="7">68币=至尊特权卡</option><option value="8">8币=1元秒杀全部</option><option value="9">10币=SVIP4秒杀</option><option value="10">58币=SVIP6秒杀</option><option value="11">88币=SVIP8秒杀</option><option value="12">128币=SVIP12秒杀</option><option value="13">3币=60元钻石充值【2.5倍】</option><option value="14">5币=98元钻石充值【2.5倍】</option><option value="15">10币=198元钻石充值【2.5倍】</option><option value="16">20币=488元钻石充值【2.5倍】</option><option value="17">40币=998元钻石充值【2.5倍】</option><option value="18">60币=1498钻石充值【2.5倍】</option><option value="19">1币=1元抢购卡</option><option value="20">10币=100亿经验卡</option><option value="21">30币=1000亿经验卡</option><option value="22">12币=真红BOSS传说召唤票</option><option value="23">200币=真红装备任选宝箱</option><option value="24">200币=圣杯原石自选宝箱</option><option value="43">16币=黄金圣剑黄金圣杖黄金圣弓顶级神器幻化</option><option value="44">8币=天魔之剑天魔之杖天魔之弓顶级神器幻化</option><option value="45">20币=断冰巨刃驭寒权杖凝霜魔弓顶级神器幻化</option><option value="46">20币=巨竹利刃巨竹权杖巨竹神弓顶级神器幻化</option><option value="47">20币=圣诞武装圣诞武装圣诞武装顶级神器幻化</option><option value="48">20币=踏雪寻梅踏雪寻梅踏雪寻梅顶级神器幻化</option><option value="49">20币=鎏金圣剑鎏金圣杖鎏金圣弓顶级神器幻化</option><option value="50">20币=横扫千军幸运扫把洒扫庭除顶级神器幻化</option><option value="51">20币=新春赐福新春赐福新春赐福顶级神器幻化</option><option value="52">20币=卓越圣剑卓越圣杖卓越圣弓顶级神器幻化</option><option value="53">20币=天启巨刃天启权杖天启战弓顶级神器幻化</option><option value="54">20币=量子巨刃量子法杖量子战弓顶级神器幻化</option><option value="55">20币=童趣甜筒童趣蛋糕童趣甜筒顶级神器幻化</option><option value="56">20币=校园之声校园之声校园之声顶级神器幻化</option><option value="57">20币=混沌魔剑混沌魔杖混沌魔弓顶级神器幻化</option><option value="58">20币=清凉一夏清凉一夏清凉一夏顶级神器幻化</option><option value="59">20币=电玩光剑电玩光杖电玩圣弓顶级神器幻化</option><option value="60">8币=星际之翼星际之翼星际之翼顶级翅膀幻化</option><option value="61">12币=黄金圣翼黄金圣翼黄金圣翼顶级翅膀幻化</option><option value="62">12币=神光之翼神光之翼神光之翼顶级翅膀幻化</option><option value="63">8币=冰魔圣翼冰魔圣翼冰魔圣翼顶级翅膀幻化</option><option value="64">20币=爱心魔翼爱心魔翼爱心魔翼顶级翅膀幻化</option><option value="65">20币=圣光之翼圣光之翼圣光之翼顶级翅膀幻化</option><option value="66">20币=冰晶羽翼冰晶羽翼冰晶羽翼顶级翅膀幻化</option><option value="67">20币=风花雪翼风花雪翼风花雪翼顶级翅膀幻化</option><option value="68">20币=冰泉圣翼冰泉圣翼冰泉圣翼顶级翅膀幻化</option><option value="69">20币=凌梅花翼凌梅花翼凌梅花翼顶级翅膀幻化</option><option value="70">20币=福星高照福星高照福星高照顶级翅膀幻化</option><option value="71">20币=鎏金圣翼鎏金圣翼鎏金圣翼顶级翅膀幻化</option><option value="72">20币=卓越圣翼卓越圣翼卓越圣翼顶级翅膀幻化</option><option value="73">20币=机械风暴机械风暴机械风暴顶级翅膀幻化</option><option value="74">20币=游龙战鼓游龙战鼓游龙战鼓顶级翅膀幻化</option><option value="75">20币=炙热炎魔炙热炎魔炙热炎魔顶级翅膀幻化</option><option value="76">8币=未来纪元宙斯审判天慧流星顶级神装幻化</option><option value="77">12币=黄金圣衣黄金圣衣黄金圣衣顶级神装幻化</option><option value="78">20币=圣银神装圣银神装圣银神装顶级神装幻化</option><option value="79">20币=彩虹独角兽野性皮卡丘可爱熊睡衣顶级神装幻化</option><option value="80">20币=阳光沙滩阳光沙滩阳光沙滩顶级神装幻化</option><option value="81">20币=南瓜死神南瓜死神南瓜死神顶级神装幻化</option><option value="82">20币=熊猫侠客熊猫巫师熊猫射手顶级神装幻化</option><option value="83">20币=霜龙神铠霜龙神铠霜龙神铠顶级神装幻化</option><option value="84">20币=冬日暖歌冬日暖歌冬日暖歌顶级神装幻化</option><option value="85">20币=圣诞装束圣诞装束圣诞装束顶级神装幻化</option><option value="86">20币=辞旧焕新辞旧焕新辞旧焕新顶级神装幻化</option><option value="87">20币=金牛贺岁金牛贺岁金牛贺岁顶级神装幻化</option><option value="88">20币=卓越守护者卓越守护者卓越守护者顶级神装幻化</option><option value="89">20币=幽魂暗影幽魂暗影幽魂暗影顶级神装幻化</option><option value="90">20币=摇滚巨星摇滚巨星摇滚巨星顶级神装幻化</option><option value="91">20币=鎏金圣铠鎏金圣铠鎏金圣铠顶级神装幻化</option><option value="92">20币=断罪圣骑断罪圣骑断罪圣骑顶级神装幻化</option><option value="93">20币=魅影特工魅影特工魅影特工顶级神装幻化</option><option value="94">20币=头号玩家头号玩家头号玩家顶级神装幻化</option><option value="95">20币=煌龙战甲煌龙战甲煌龙战甲顶级神装幻化</option><option value="96">20币=蜜蜂狂潮蜜蜂狂潮蜜蜂狂潮顶级神装幻化</option><option value="97">8币=超时空之书顶级梅书幻化</option><option value="98">12币=龙之秘术顶级梅书幻化</option><option value="99">12币=黄金圣言顶级梅书幻化</option><option value="100">20币=告白气球顶级梅书幻化</option><option value="101">16币=mojito顶级梅书幻化</option><option value="102">20币=七夕童话顶级梅书幻化</option><option value="103">20币=三尺讲台顶级梅书幻化</option><option value="104">20币=立冬饺子顶级梅书幻化</option><option value="105">20币=水晶恋歌顶级梅书幻化</option><option value="106">20币=圣诞童话顶级梅书幻化</option><option value="107">20币=感恩火鸡顶级梅书幻化</option><option value="108">20币=温泉暖暖顶级梅书幻化</option><option value="109">20币=永夜幽梅顶级梅书幻化</option><option value="110">20币=火烧策划顶级梅书幻化</option><option value="111">20币=霜龙王座顶级梅书幻化</option><option value="112">20币=牛转乾坤顶级梅书幻化</option><option value="113">20币=元宵花灯顶级梅书幻化</option><option value="114">20币=一心一意顶级梅书幻化</option><option value="115">20币=琉璃纸鸢顶级梅书幻化</option><option value="116">20币=哀思河灯顶级梅书幻化</option><option value="117">20币=鎏金圣典顶级梅书幻化</option><option value="118">20币=爱的贺卡顶级梅书幻化</option><option value="119">20币=治疗宝典顶级梅书幻化</option><option value="120">20币=糖果童话顶级梅书幻化</option><option value="121">20币=校园纪念册顶级梅书幻化</option><option value="122">20币=夏日泳鸭顶级梅书幻化</option><option value="123">20币=迷你街机厅顶级梅书幻化</option><option value="124">12币=神秘之书顶级脚印幻化</option><option value="125">12币=绚丽烟花顶级脚印幻化</option><option value="126">12币=海神之锚顶级脚印幻化</option><option value="127">12币=大吉大利顶级脚印幻化</option>                            </select>
+                            
+                        </div>
+                        <!-- 商品说明：  -->
+                        <div id="shopInfo" style="color:red;"></div><br />
+                        <div>
+                            <button type="button" class="btn btn-primary form-control" onclick="getShop()">确认兑换</button>
+                        </div><br />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fanli() {
+            var fanli = $("[name='fanli']").val();
+            if(fanli != 0){
+                layer.confirm("累充奖励均可得加领取（如500可领取300、100等）", { title: "温馨提示" }, function () {
+                    $.post("player.php", {type: 'fanli', fanli: fanli}, function (data) {
+                        layer.msg(data);
+                    });
+                });
+            }else {
+                layer.msg('请选择领取的套餐');
+            }
+        }
+        
+        function getFanMoney() {
+            var fanmoney = $("[name='fanmoney']").val();
+            if(fanmoney != 0){
+                layer.confirm("累充奖励均可得加领取（如500可领取300、100等）", { title: "温馨提示" },function () {
+                    $.post("player.php", {type: 'getFanMoney', fanmoney: fanmoney}, function (data) {
+                        layer.msg(data);
+                    });
+                });
+            }else {
+                layer.msg('请选择领取的累充奖励');
+            }
+        }
+
+        function getShop () {
+            var shopId = $("[name='shopId']").val();
+            if(shopId != 0){
+                $.ajax({
+                    url: 'player.php',
+                    type: 'post',
+                    dataType: 'json',
+                    data: {type: 'getShop'},
+                    success: function(data) {
+                        if (data.code == 1) {
+                            var shopName = '';
+                            for (const item of data.data) {
+                                if(item.id === shopId){
+                                    shopName = item.name;
+                                }
+                            }
+                            layer.confirm("确认兑换【"+shopName+"】？", { title: "温馨提示" },function () {
+                                ajax('api.php?act=buy', {id: shopId});
+                            });
+                        }
+                    }
+                });
+                
+            }else {
+                layer.msg('请选择要购买的商品');
+            }
+        }
+
+        function showShopInfo(shopId) {
+            $.ajax({
+                url: 'player.php',
+                type: 'post',
+                dataType: 'json',
+                data: {type: 'getShop'},
+                success: function(data) {
+                    if (data.code == 1) {
+                        for (const item of data.data) {
+                            if(item.id === shopId){
+                                $("#shopInfo").html('商品说明：' + item.info);
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function cdk() {
+            $.confirm({
+                title: '温馨提示',
+                content: '' +
+                '<form class="formName">' +
+                '<div class="form-group">' +
+                '<label>CDK兑换（联系客服赞助获取）</label>' +
+                '<input type="text" name="km" placeholder="请输入您的CDK兑换码" class="cdk form-control" required />' +
+                '</div>' +
+                '</form>',
+                buttons: {
+                    formSubmit: {
+                        text: '提交',
+                        btnClass: 'btn-blue',
+                        action: function () {
+                            var km = $("input[name='km']").val();
+                            if(!km){
+                                $.alert('请输入您的CDK兑换码');
+                                return false;
+                            }
+                            layer.load(1);
+                            $.ajax({
+                                url: 'api.php?act=recharge',
+                                type: 'post',
+                                dataType: 'json',
+                                data: {km:km},
+                                success: function (data) {
+                                    console.log(data);
+                                    layer.closeAll('loading');
+                                    layer.msg(data.msg);
+                                },
+                                error: function (error) {
+                                    layer.closeAll('loading');
+                                    layer.msg('服务器错误！');
+                                }
+                            });
+                        }
+                    },
+                    cancel: {
+                        text: '取消'
+                    },
+                },
+                onContentReady: function () {
+                    var jc = this;
+                    this.$content.find('form').on('submit', function (e) {
+                        e.preventDefault();
+                        jc.$$formSubmit.trigger('click');
+                    });
+                }
+            });
+        }
+        
+        
+        function daySign(uid) {
+        layer.confirm("每日福利10商城币+30首冲" , { title: "温馨提示" },function () {
+                $.post("player.php", {
+                    type: 'qiandao', uid: uid
+                }, function (data) {
+                    layer.msg(data);
+                });
+            });
+        }    
+
+
+
+        function vipSign(uid, allch) {
+            layer.confirm("当前您的"+ getVipLevel(allch).level +"，每日可领取"+getVipLevel(allch).sign+"商城币" , { title: "温馨提示" },function () {
+                if (uid == '') {
+                    layer.msg('游戏账号不能为空');
+                    return false;
+                }
+                $.post("player.php", {
+                    type: 'sign', uid: uid
+                }, function (data) {
+                    layer.msg(data);
+                });
+            });
+        }
+        
+        function getBlessBag() {
+            layer.confirm("您确定要消耗10兑换币开启福袋吗？" , { title: "温馨提示" },function () {
+                $.post("player.php", {
+                    type: 'shilian',
+                }, function (data) {
+                    layer.msg(data);
+                });
+            });
+        }
+        
+        function getUseInfo() {
+            layer.confirm("<span style='color:red;'>平台说明：</span><br/><br/>商城币=可每天签到白嫖领取<br/>兑换商品消耗商城币<br/>" , { title: "使用说明" },function () {
+                layer.closeAll();
+            });
+        }
+
+        function nullMsg() {
+            layer.msg('暂无功能');
+        }
+
+        function getVipLevel(allch)
+        {
+            if (allch >= 20000) {
+                return {level: '定制会员',sign: '500'};
+            } else if (allch >= 10000) {
+                return {level: '王者会员',sign: '300'};
+            } else if (allch >= 6000) {
+                return {level: '皇冠会员',sign: '200'};
+            } else if (allch >= 3000) {
+                return {level: '钻石会员',sign: '150'};
+            } else if (allch >= 1000) {
+                return {level: '铂金会员',sign: '100'};
+            } else if (allch >= 500) {
+                return {level: '黄金会员',sign: '60'};
+            } else if (allch >= 100) {
+                return {level: '白银会员',sign: '30'};
+            } else if (allch >= 0) {
+                return {level: '普通会员',sign: '0'};
+            }
+        }
+        
+        function logout() {
+            layer.confirm("您确定要退出系统吗？" , { title: "温馨提示" },function () {
+                layer.msg('退出');
+                window.location.href='/user/login.php?logout=1'
+            });
+        }
+    </script>
+</body>
+
+</html>

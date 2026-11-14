@@ -1,0 +1,40 @@
+html{font-size:100px;  color:#333; padding-bottom:66px;}
+body{font-size:.2rem;background:#f0efef;}
+input{font-size:.2rem}
+
+.lb2tit{ padding:0.12rem 0 0.06rem 0; overflow:hidden; background:url(../img/h5_stline.png) repeat-x bottom #fff;}
+.lb2tit p{ width:100px;}
+.lb2tit span{ display:block; font-size:0.18rem; text-align:center; padding-top:0.06rem; color:#333; height:30px;}
+.lb2tit b{ display:block; background:#ffb516; height:6px; border-radius:3px; box-shadow:1px 2px 5px #ffe4aa; margin:0 10px;}
+
+.kacon{background:#fff; overflow:hidden; clear:both; margin-top:10px;}
+.toushao{padding: 12px 0;border-bottom: 1px solid #e5e5e5;position: relative;font-size:12px;clear:both;height: 0.58rem;border-bottom:1px solid #e5e5e5;}
+.toushao .lgtit{font-size:.16rem;padding: 4px 0;padding-bottom: 10px;padding-right: 1%;overflow: hidden;text-overflow: ellipsis;}
+.toushao .lgico img{display: block;float:left;width: 0.58rem;height: 0.58rem;padding-right:10px;padding-left:10px;border-radius:8px;}
+.toushao a.star-btn{display: block;width:15%;height: 28px;line-height: 28px;display: inline-block;text-align: center;border-radius:4px;color: #fff;background:#ffb516;position: absolute;right:10px;top: 28px;transition: all .3s;font-size:0.14rem;text-decoration:none;}
+.toushao a.star-btn:hover{background: #ffb516;background: linear-gradient(to right, #ffb516, #ffb516);color: #fff;}
+
+.yxlbtit{ padding:10px 15px; font-size:0.16rem; font-weight:normal; color:#333;}
+.jhm{ padding:0 15px; overflow:hidden; clear:both; height:40px; padding-top:10px;}
+.jhm p{ display:block; width:72%; background:#e5e5e5; height:30px; line-height:30px; text-align:center; font-size:0.14rem; float:left;}
+.jhm p span{ color:#ff163c;}
+.jhm .copy-btn{ display:block; float:right; width:24%; display: block;width:22%;height: 26px;line-height: 26px; text-align: center;border: 1px solid #ffb516;border-radius:4px;color: #ffb516; font-size:0.16rem;}
+.tips{ color:#ff0830; line-height:20px; padding:0 15px; font-size:0.12rem; padding-bottom:10px;}
+.lbnr{ padding:0px 15px 15px 15px; overflow:hidden; clear:both; font-size:0.14rem; color:#333; line-height:25px;}
+.lbnr b,.lbnr span{ display:block; float:left;}
+
+.kfbox{ background:#fff; overflow:hidden; clear:both; margin-top:10px;}
+.lblist li{padding: 12px 0;border-bottom: 1px solid #e5e5e5;position: relative; font-size:14px; clear:both; height:0.66rem;}
+.lblist li .title{font-size:.16rem;padding:7px 0;padding-right: 16%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.lblist li span.get b{ width:34%; max-width:150px; height: 10px;background: #ddd;display: inline-block;border-radius: 5px;position: relative;overflow: hidden;margin-right: 4px;}
+.lblist li span.get b i{height: 10px; background: #34d1ab;background: linear-gradient(to right, #ffb516, #ffb516);border-radius: 5px;display: inline-block;position: absolute;left: 0;top: 0;}
+.lblist li span.get em{ color:#ffb516; padding-left:7px;}
+.lblist li .new img{display: block;float:left;width: 0.58rem;height: 0.58rem;padding-right:10px;padding-left:10px;border-radius:8px;}
+.lblist li a.ling-btn{display: block;width:14%;height: 26px;line-height: 26px;display: inline-block;text-align: center;border: 1px solid #ffb516;border-radius:4px;color: #ffb516;position: absolute;right:10px;top: 38px;transition: all .3s; font-size:0.14rem; text-decoration:none;}
+.lblist li a.ling-btn:hover{background: #ffb516;background: linear-gradient(to right, #ffb516, #ffb516);color: #fff;}
+
+.show_hao { display: block; padding: 10px; font-size: 14px;}
+.show_hao .hao{ width:100%; float:left; height:30px; overflow:hidden;}
+.show_hao span{ display:block; width:100%;}
+.show_hao span input{ width:60%; display:block; height:26px; line-height:26px; border:1px solid #ccc; margin-top:10px; font-size:0.14rem; color:#666; padding-left:10px; float:left;}
+.show_hao span button{width:52px;height: 28px;line-height: 22px;border:1px solid #ccc;font-size:0.14rem;color:#666;text-align:center;background:none;border-radius:3px;margin-top:10px;margin-left:5px; white-space:nowrap;}

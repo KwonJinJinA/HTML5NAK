@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,180,70,89,32,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"WLZW_0.png"
+	],
+	"memCost":48416,
+	"rHeight":32
+}

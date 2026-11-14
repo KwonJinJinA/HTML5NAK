@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,179,76,89,52,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"HD_FZBJ_0.png"
+	],
+	"memCost":52392,
+	"rHeight":52
+}

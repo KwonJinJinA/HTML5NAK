@@ -1,0 +1,24 @@
+{
+    "x":0,
+    "type":"Label",
+    "selectedBox":1,
+    "selecteID":1,
+    "props":{"y":0,"x":0,"text":"设置","strokeColor":"#24221e","stroke":1,"presetID":1,"preset":"laya/assets/labelLibs/mainUI_label.prefab","fontSize":20,"font":"SimHei","color":"#ffe7a6"},
+    "nodeParent":-1,
+    "label":"Label(mainUI_label)",
+    "isDirectory":false,
+    "isAniNode":true,
+    "hasChild":false,
+    "compId":1,
+    "child":[
+        ],
+    "animations":[
+        {
+            "nodes":[
+                ],
+            "name":"ani1",
+            "id":1,
+            "frameRate":24,
+            "action":0
+        }]
+}

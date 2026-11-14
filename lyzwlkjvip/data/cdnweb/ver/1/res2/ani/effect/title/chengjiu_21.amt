@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,144,74,72,45,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"chengjiu_21_0.png"
+	],
+	"memCost":40896,
+	"rHeight":45
+}

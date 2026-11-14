@@ -1,0 +1,30 @@
+{
+	"frames":[
+		[0,0,564,550,59,273,0,200],
+		[0,0,496,517,-4,245,1,200],
+		[0,517,472,482,0,246,1,200],
+		[0,0,627,526,47,261,2,200],
+		[0,0,570,586,-4,247,3,200],
+		[0,0,560,575,-4,247,4,200],
+		[0,0,556,558,-4,246,5,200]
+	],
+	"animations":{
+		"00":{"frames":[0,1,2,3,4,5,6]}
+	},
+	"sequence":{
+		"00":{"frames":[0,1,2,3,4,5,6,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0,0,0,0,0,0,0]}
+	},
+	"images":[
+		"cwj_skill4RightDown_0.png",
+		"cwj_skill4RightDown_1.png",
+		"cwj_skill4RightDown_2.png",
+		"cwj_skill4RightDown_3.png",
+		"cwj_skill4RightDown_4.png",
+		"cwj_skill4RightDown_5.png"
+	],
+	"memCost":8349856,
+	"rHeight":273
+}

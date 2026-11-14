@@ -1,0 +1,20 @@
+{
+	"frames":[
+		[0,0,107,107,52,52,0,200],
+		[0,107,107,107,52,52,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0,1]}
+	},
+	"sequence":{
+		"00":{"frames":[0,1,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0,0]}
+	},
+	"images":[
+		"collect_0.png"
+	],
+	"memCost":89040,
+	"rHeight":52
+}

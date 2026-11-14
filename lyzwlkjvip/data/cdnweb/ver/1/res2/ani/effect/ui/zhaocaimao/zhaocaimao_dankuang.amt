@@ -1,0 +1,14 @@
+{
+	"frames":[
+		[0,0,247,224,122,291,0,200],
+		[0,0,247,224,122,291,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0,1]}
+	},
+	"images":[
+		"zhaocaimao_dankuang_0.png"
+	],
+	"memCost":262144,
+	"rHeight":291
+}

@@ -1,0 +1,102 @@
+
+
+
+/*盘面主体*/
+
+/*砸蛋主体区域*/
+.zajindan{width: 6.5rem;height: 6.5rem;position: relative;left: 0;right: 0;margin: 0 auto;}
+.zajindan-ul {width: 6.5rem;height: 6.5rem;display: flex;flex-wrap: wrap}
+.zajindan-ul li{width: 1.6rem;height: 1.8rem;margin-left: 0.4rem;position: relative;}
+.zajindan-ul li img{width: 100%}
+.zajindan-ul li .goldegg{position: relative;
+    top: 0.26666667rem;
+    -o-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.egg .info {
+    display: none;
+    position: absolute;
+    left: -0.20rem;
+    top: -0.2rem;
+    width: 1rem;
+    height: 0.57rem;
+
+}
+
+/*锤子*/
+#hammer {
+    position: absolute;
+    left: 6rem;
+    top: -0.5rem;
+    z-index: 1000;
+    width: 1.2rem;
+    height: 1.4rem;
+
+    -o-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+.shak {
+    -o-animation: hammer-move 0.5s linear infinite alternate;
+    -ms-animation: hammer-move 0.5s linear infinite alternate;
+    -moz-animation: hammer-move 0.5s linear infinite alternate;
+    -webkit-animation: hammer-move 0.5s linear infinite alternate;
+    animation: hammer-move 0.5s linear infinite alternate;
+}
+@keyframes hammer-move {
+    100% {
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+
+/*金蛋跳动*/
+.egg li img.jump {
+    -o-animation: jump .5s infinite alternate;
+    -ms-animation: jump .5s infinite alternate;
+    -moz-animation: jump .5s infinite alternate;
+    -webkit-animation: jump .5s infinite alternate;
+    animation: jump .5s infinite alternate;
+}
+@keyframes jump {
+    100% {
+        top: 0.13333333rem;
+    }
+}
+
+/*提示文字*/
+.hit {
+    -o-animation: hammer-hit 0.2s 3 alternate;
+    -ms-animation: hammer-hit 0.2s 3 alternate;
+    -moz-animation: hammer-hit 0.2s 3 alternate;
+    -webkit-animation: hammer-hit 0.2s 3 alternate;
+    animation: hammer-hit 0.2s 3 alternate;
+}
+@keyframes hammer-hit {
+    100% {
+        -o-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+}

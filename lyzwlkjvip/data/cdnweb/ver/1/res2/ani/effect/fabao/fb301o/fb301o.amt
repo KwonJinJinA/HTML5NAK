@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,64,123,31,61,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"fb301o_0.png"
+	],
+	"memCost":30744,
+	"rHeight":61
+}

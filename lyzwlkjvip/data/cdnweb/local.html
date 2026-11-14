@@ -1,0 +1,100 @@
+﻿<html>
+
+<head>
+	<meta charset='utf-8' />
+	<title>测试-阴阳界</title>
+	<meta name='renderer' content='webkit'>
+	<meta name='viewport'
+		content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover' />
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='full-screen' content='true' />
+	<meta name='x5-fullscreen' content='true' />
+	<meta name='360-fullscreen' content='true' />
+	<meta http-equiv='expires' content='0' />
+	<meta name='laya' screenorientation='landscape' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta http-equiv='expires' content='0' />
+	<meta http-equiv='Cache-Control' content='no-siteapp' />
+	<!-- <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script> -->
+	<script type="text/javascript">
+		var quick = {
+			ProductCode: "70208646420050741307882276107804",
+			ProductKey: "82578943",
+			channel: "tttt",
+			server: "http://game.zxycbgmban.btban.com",
+			cdn: "http://localhost/",
+			version: "",
+		}
+		<!-- window['pass']="123"; -->
+		<!-- window['ss']="123"; -->
+		window['user']="1000000@1375";
+		// var vConsole = new window.VConsole();
+	</script>
+	<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="pay/js/layer.js"></script>
+	
+	<script type="text/javascript" src="libs/errorTrace0.3.2.js"></script>
+	<script type="text/javascript" src="gameConfig/libQuickSDK_v2.js"></script>
+	<!-- <script type="text/javascript" src="gameConfig/globalConfig_quick.js?ver="></script> -->
+	<script type="text/javascript">
+		document.write('<script src="gameConfig/globalConfig_quick.js?ver=' + new Date().getTime() + '" type="text/javascript" charset="utf-8"><\/script>');
+		document.write('<script src="libs/start2.0.js?ver=' + new Date().getTime() + '" type="text/javascript" charset="utf-8"><\/script>');
+	</script>
+	<!-- <script type="text/javascript" src="libs/start2.0.js?ver=20220428"></script> -->
+	<script type="text/javascript" src="libs/dexie.min.js"></script>
+	<script type="text/javascript" src="libs/idb.js"></script>
+	<script type="text/javascript" src="libs/fonts.js"></script>
+	<script type="text/javascript" src="libs/jszip.min.js"></script>
+	<script type="text/javascript" src="libs/jszip-utils.js"></script>
+	<script type="text/javascript" src="libs/md5.min.js"></script>
+	<script type="text/javascript" src="libs/report_1.0.0.js"></script>
+	<script type="text/javascript" src="libs/zlib.min.js"></script>
+	<script type="text/javascript" src="libs/easysax.js"></script>
+	<script type="text/javascript" src="libs/simpleDomParser.js"></script>
+	<!-- <script type="text/javascript" src="sdks/quickSDK.js"></script> -->
+	<script type="text/javascript">
+		document.write('<script src="sdks/quickSDK.js?ver=' + new Date().getTime() + '" type="text/javascript" charset="utf-8"><\/script>');
+	
+	</script>
+	<!-- <script type="text/javascript" src="https://qkh5api.quickapi.net/static/lib/libQuickSDK_v2.js"></script>  -->
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		#__vconsole {
+			display: none;
+		}
+
+		.show {
+			display: block !important;
+		}
+	</style>
+	<script type="text/javascript">
+
+		changeProContent("开始加载...");
+
+		var tipTimer = setTimeout("changetip()", 1500);
+		WorkerStart();
+		// initGame();
+		window.SDKRuntime.initSdk();
+		listenSDK();
+	</script>
+
+</head>
+
+<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #000000;height:100%;'>
+	<div id="divCopy"></div>
+	<img id="loadingImg" src="loading/riding.gif" class='loader-ring' />
+	<div id="loading" class='loader-ring'>
+		<div id="infoDiv" style="width:240px;margin-top:230px">
+			<font color="#FFFFFF">正在进入游戏....如果长时间未进入，请</font><a href="javascript:window.location.reload()"
+				style='color:#FFFFFF;'>关闭浏览器再次进入</a>
+		</div>
+	
+		<!--<div id="infoDiv" style="width:240px;margin-top:230px"><font color="#FFFFFF">正在进入游戏...如果长时间未进入，请点击</font><a href="javascript:location.reload()" style='color:#FFFFFF;'>刷新游戏</a></div>	-->
+		<div id="loadDiv" style="width:240px;color:#FFFFFF;size:10px"></div>
+	</div>
+
+</body>
+
+</html>

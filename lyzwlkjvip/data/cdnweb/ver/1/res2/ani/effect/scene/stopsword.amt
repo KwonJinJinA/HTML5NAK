@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,216,232,115,151,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"stopsword_0.png"
+	],
+	"memCost":198660,
+	"rHeight":151
+}

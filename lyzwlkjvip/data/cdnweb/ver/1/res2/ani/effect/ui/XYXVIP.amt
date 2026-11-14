@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,173,97,85,40,0,265]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"XYXVIP_0.png"
+	],
+	"memCost":66048,
+	"rHeight":40
+}

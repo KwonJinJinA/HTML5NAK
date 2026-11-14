@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,59,57,28,27,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"jintiao_0.png"
+	],
+	"memCost":65536,
+	"rHeight":27
+}

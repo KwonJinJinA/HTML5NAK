@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,58,58,28,28,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"6BS_GJ_0.png"
+	],
+	"memCost":12996,
+	"rHeight":28
+}

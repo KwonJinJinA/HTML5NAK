@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,442,289,218,144,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"Lamp_ef_0.png"
+	],
+	"memCost":1048576,
+	"rHeight":144
+}

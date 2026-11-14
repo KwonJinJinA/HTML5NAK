@@ -1,0 +1,13 @@
+{
+	"frames":[
+		[0,0,50,51,24,100,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"chenmo_0.png"
+	],
+	"memCost":9800,
+	"rHeight":209
+}
