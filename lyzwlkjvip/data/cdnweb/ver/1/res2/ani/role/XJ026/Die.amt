@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,2,2,0,0,0,200]
+	],
+	"animations":{
+		"20":{"frames":[0]}
+	},
+	"sequence":{
+		"20":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"20":{"frames":[0]}
+	},
+	"images":[
+		"Die_0.png"
+	],
+	"memCost":4,
+	"rHeight":0
+}

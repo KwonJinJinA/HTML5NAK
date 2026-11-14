@@ -1,0 +1,19 @@
+{
+	"frames":[
+		[0,0,620,596,283,580,0,200]
+	],
+	"animations":{
+		"00":{"frames":[0]}
+	},
+	"sequence":{
+		"00":{"frames":[0,0]}
+	},
+	"actionMarks":{
+		"00":{"frames":[0]}
+	},
+	"images":[
+		"ZL24_0.png"
+	],
+	"memCost":1468368,
+	"rHeight":580
+}

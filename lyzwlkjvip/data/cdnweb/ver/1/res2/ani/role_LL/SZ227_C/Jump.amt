@@ -1,0 +1,1 @@
+{"scale":2,"sequence":{"61":{"frames":[2,3,2]},"63":{"frames":[0,1,0]}},"isYaSuo":true,"actionMarks":{"61":{"frames":[0,0]},"63":{"frames":[0,0]}},"images":["Jump_0.png"],"animations":{"61":{"frames":[2,3]},"63":{"frames":[0,1]}},"memCost":22320,"frames":[[0,0,46,74,29,67,0,95],[0,0,46,74,29,67,0,95],[0,74,39,50,26,63,0,95],[0,74,39,50,26,63,0,95]],"rHeight":135}
